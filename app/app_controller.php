@@ -1,0 +1,37 @@
+<?
+class AppController extends Controller {
+	var $components = array('Session');
+	var $allowance = array();
+	
+	function beforeFilter() {
+		$this->restrict();
+	}
+		
+	function create_session($member) {
+		$this->Session->write('current_user', $member['Student']);
+	}
+	
+	function restrict() {
+		
+		if($this->Session->read('current_user') OR in_array($this->params['action'], $this->allowance)) {
+			
+			return true;
+			
+		} else {
+			
+			$this->redirect('/students/login');
+			$this->Session->setFlash('YOU ARE NOT ALLOWED TO GET THERE');
+		}
+	}
+	
+	function allow() {
+		
+		foreach(func_get_args() as $action) {
+			array_push($this->allowance, $action);
+		}
+		
+		$this->restrict();
+	}
+	
+}
+?>

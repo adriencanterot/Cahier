@@ -2,6 +2,7 @@
 class Document extends AppModel {
 	
 	var $belongsTo = array("Subject", "Student");
+        var $hasAndBelongsToMany = "Event";
 	var $hasMany = array("DocumentElement");
 	
 	function aftersave() {

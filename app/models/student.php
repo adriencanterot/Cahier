@@ -1,7 +1,7 @@
 <?
 class Student extends AppModel {
 	
-	var $hasMany = "Documents";
+	var $hasMany = array("Documents", "Events");
 	
 	function validate_login($member, $password) {
 		

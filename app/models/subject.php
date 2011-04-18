@@ -1,6 +1,6 @@
 <?
 class Subject extends AppModel {
 	
-	var $hasMany = "Documents";
+	var $hasMany = array("Documents", "Events");
 };
 ?>

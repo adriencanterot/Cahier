@@ -10,6 +10,14 @@ class AppController extends Controller {
 	function create_session($member) {
 		$this->Session->write('current_user', $member['Student']);
 	}
+
+        function user($data) {
+            if($data == "") {
+                return $this->Session->read('current_user.id');
+            } else {
+                return $this->Session->read('current_user.'.$data);
+            }
+        }
 	
 	function restrict() {
 		

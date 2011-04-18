@@ -1,0 +1,32 @@
+#left {
+
+    position: relative;
+    border-right-style: dotted;
+    border-left-style: dotted;
+    border-bottom-style: dotted;
+    border-top-style: dotted;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    width: 20%;
+    float:left;
+}
+#center {
+
+    width: 60%;
+}
+#right {
+
+    position: relative;
+    border-right-style: dotted;
+    border-left-style: dotted;
+    border-bottom-style: dotted;
+    border-top-style: dotted;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    width: 20%;
+    float: right;
+}

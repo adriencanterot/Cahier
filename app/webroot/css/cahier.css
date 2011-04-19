@@ -1,6 +1,13 @@
-#left {
-
+#content{
     position: relative;
+    width : 1200px;
+    padding: 15px 15px 15px 15px;
+    margin : auto;
+}
+
+#left {
+    position: relative;
+    float:left;
     border-right-style: dotted;
     border-left-style: dotted;
     border-bottom-style: dotted;
@@ -10,23 +17,31 @@
     padding-bottom: 5px;
     padding-top: 5px;
     width: 20%;
-    float:left;
+    border : 1px solid black;
 }
 #center {
-
-    width: 60%;
+    position:relative;
+    width: 55%;
+    border : 1px solid black;
+    padding : 10px 10px 10px 10px;
+    margin-left: 22%;
 }
 #right {
-
+    float: right;
     position: relative;
-    border-right-style: dotted;
-    border-left-style: dotted;
-    border-bottom-style: dotted;
-    border-top-style: dotted;
+    border : 1px solid black;
     padding-right: 5px;
     padding-left: 5px;
     padding-bottom: 5px;
     padding-top: 5px;
     width: 20%;
-    float: right;
+    
+}
+#menu {
+    width: 1200px;
+    margin:auto;
+    text-align: right;
+    background-color: white;
+    color: black;
+    padding : 5px 15px 5px 15px;
 }

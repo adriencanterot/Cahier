@@ -28,6 +28,7 @@
 		echo $this->Html->meta('icon');
 
 		echo $this->Html->css('generic');
+                echo $this->Html->css('cahier');
 		echo $this->Html->script('addremove.js');
 
 		echo $scripts_for_layout;
@@ -45,18 +46,20 @@
 <body>
 	<div id="container">
 		<div id="header">
-			<h1><?php echo $this->Html->link(__('CakePHP: the rapid development php framework', true), 'http://cakephp.org'); ?></h1>
+                        </h1><div id ="menu"><? echo $this->element('topmenu'); ?></div>
 		</div>
 		<div id="content">
 
-                    <div id ="center">
+                    
                     <div id ="left">
-
+                        <h4> Documents </h4>
                     </div>
 
                     <div id ="right">
-
+                        <h4>Devoirs à faire</h4>
                     </div>
+                    
+                    <div id ="center">
                         
                         <?php echo $this->Session->flash(); ?>
 			<div><?php echo $session->read('current_user.name'); ?></div>

@@ -53,10 +53,13 @@
                     
                     <div id ="left">
                         <h4> Documents </h4>
+                        <h5>Mes documents</h5>
+                        <? echo $this->element('documents', array('doclist' => $mydocs)); ?>
                     </div>
 
                     <div id ="right">
                         <h4>Devoirs à faire</h4>
+                        <? echo $this->element('events', array('eventlist' => $events)); ?>
                     </div>
                     
                     <div id ="center">

@@ -37,7 +37,6 @@
 <body>
 	<div id="container">
 		<div id="header">
-                        </h1><div id ="menu"><? echo $this->element('topmenu'); ?></div>
 		</div>
 		<div id="login_form">
                     <h3>Connectez-vous</h3>

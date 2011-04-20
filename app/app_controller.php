@@ -11,7 +11,7 @@ class AppController extends Controller {
 		$this->Session->write('current_user', $member['Student']);
 	}
 
-        function user($data) {
+        function user($data = '') {
             if($data == "") {
                 return $this->Session->read('current_user.id');
             } else {

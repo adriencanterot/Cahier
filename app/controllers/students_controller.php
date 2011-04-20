@@ -8,6 +8,7 @@ class StudentsController extends AppController {
 	
 	
 	function login() {
+            $this->layout = 'login';
 		if(!empty($this->data)) {
 			$member = $this->Student->validate_login($this->data['Student']['email'], $this->data['Student']['password']);
 			

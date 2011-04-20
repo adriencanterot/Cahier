@@ -45,3 +45,11 @@
     color: black;
     padding : 5px 15px 5px 15px;
 }
+#login_form {
+    width:300px;
+    background : #fff;
+    margin : auto;
+    padding : 40px 30px 40px 30px;
+    margin-top: 30px;
+
+}

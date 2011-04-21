@@ -5,6 +5,13 @@ class AppController extends Controller {
 	
 	function beforeFilter() {
 		$this->restrict();
+                $this->layout = 'homes';
+                $this->loadModel('Document');
+                $this->loadModel('Event');
+                $mydocs = $this->Document->find('all', array('conditions' => array('student_id' => $this->user())));
+                $events = $this->Event->find('all');
+                $this->set('mydocs', $mydocs);
+                $this->set('events', $events);
 	}
 		
 	function create_session($member) {

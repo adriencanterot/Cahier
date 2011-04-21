@@ -10,7 +10,6 @@ class DocumentsController extends AppController {
 		
 		if(!empty($this->data)) {
 			$this->data['Document']['student_id'] = $this->user();
-			print_r($this->data);
 			if($this->Document->save($this->data)) {
 				$this->flash("Votre document a ete envoye, toute la classe peut desormais le voir", '/documents/index');
 			}

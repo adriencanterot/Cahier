@@ -1,6 +1,6 @@
 #content{
     position: relative;
-    width : 1400px;
+    width : 95%;
     padding: 15px 15px 15px 15px;
     margin : auto;
 }
@@ -38,7 +38,7 @@
     
 }
 #menu {
-    width: 1400px;
+    width: 98%;
     margin:auto;
     text-align: right;
     background-color: white;

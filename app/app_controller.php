@@ -6,15 +6,17 @@ class AppController extends Controller {
 	function beforeFilter() {
 		$this->restrict();
                 $this->layout = 'homes';
+                $this->loadModel('Subject');
                 $this->loadModel('Document');
                 $this->loadModel('Event');
-                $this->loadModel('Subject');
-                $mydocs = $this->Document->find('all', array('conditions' => array('student_id' => $this->user())));
-                $events = $this->Event->find('all');
-                $subjects = $this->Subject->find('all');
-                $this->set('mydocs', $mydocs);
-                $this->set('events', $events);
-                $this->set('subjects', $subjects);
+
+                
+                
+                $this->set('mydocs', 
+                        $mydocs = $this->Document->find('all', array('conditions' => 
+                            array('student_id' => $this->user()))));
+                $this->set('events', $this->Event->find('list'));
+                $this->set('subjects', $this->Subject->find('list'));
 	}
 		
 	function create_session($member) {
@@ -50,6 +52,10 @@ class AppController extends Controller {
 		
 		$this->restrict();
 	}
+        
+        function notice($string) {
+            $this->Session->setFlash($string);
+        }
 	
 }
 ?>

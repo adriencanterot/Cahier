@@ -41,3 +41,4 @@ endforeach;
 echo "\n";
 ?>
 </table>
+<?php echo $this->Html->link(sprintf(__('New %s', true), $singularHumanName), array('action' => 'add')); ?>

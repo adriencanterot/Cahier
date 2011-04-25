@@ -3,7 +3,7 @@
         echo $session->flash('auth');
         echo $this->Form->create('Student', array('action' => 'login'));
         echo $this->Form->input('email');
-        echo $this->Form->input('password');
-        echo $this->Form->end('Login');
+        echo $this->Form->input('password', array('label' => 'Mot de passe'));
+        echo $this->Form->end('Se connecter');
         echo $this->Html->linK("S'inscrire", '/students/signin');
     ?>

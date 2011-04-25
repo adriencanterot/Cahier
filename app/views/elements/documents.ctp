@@ -1,3 +1,3 @@
 <? foreach($doclist as $element): ?>
-    <? echo $element['Document']['name']; ?><br>
+    <? echo $element; ?><br>
 <?endforeach;?>

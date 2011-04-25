@@ -1,3 +1,3 @@
-<? foreach($subjectlist as $subject): ?>
-    <? echo $this->Html->link($subject['Subject']['name'], '/documents/showbysubject/'.$subject['Subject']['id']); ?><br>
+<? foreach($subjectlist as $id => $subject): ?>
+    <? echo $this->Html->link($subject, '/documents/showbysubject/'.$id); ?><br>
 <?endforeach;?>

@@ -14,12 +14,12 @@ class StudentsController extends AppController {
 			$member = $this->Student->validate_login($this->data['Student']['email'], $this->data['Student']['password']);
 			
 			if($member != -1) {
-				$this->Session->setFlash('INPUT DOES MATCH');
+				$this->Session->setFlash('Vous êtes connecté');
 				$this->create_session($member);
 				$this->redirect('/homes');
 
 			} else {
-				$this->Session->setFlash("INPUT DOES NOT MATCH");
+				$this->Session->setFlash("La combinaison email/mot de passe ne marche pas");
 			}
 		}
 	}

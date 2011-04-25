@@ -8,28 +8,23 @@
 #left {
     position: relative;
     float:left;
-    border-right-style: dotted;
-    border-left-style: dotted;
-    border-bottom-style: dotted;
-    border-top-style: dotted;
     padding-right: 5px;
     padding-left: 5px;
     padding-bottom: 5px;
     padding-top: 5px;
     width: 20%;
-    border : 1px solid black;
+    border-right : 1px solid black;
 }
 #center {
     position:relative;
     width: 55%;
-    border : 1px solid black;
     padding : 10px 10px 10px 10px;
     margin-left: 22%;
 }
 #right {
     float: right;
     position: relative;
-    border : 1px solid black;
+    border-left : 1px solid black;
     padding-right: 5px;
     padding-left: 5px;
     padding-bottom: 5px;

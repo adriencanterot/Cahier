@@ -60,6 +60,8 @@
                     <div id ="right">
                         <h4>Devoirs à faire</h4>
                         <? echo $this->element('events', array('eventlist' => $events)); ?>
+                        <? echo $this->element('ajouter_devoir'); ?>
+                        
                     </div>
                     
                     <div id ="center">
@@ -73,12 +75,7 @@
 
 		</div>
 		<div id="footer">
-			<?php echo $this->Html->link(
-					$this->Html->image('cake.power.gif', array('alt'=> __('CakePHP: the rapid development php framework', true), 'border' => '0')),
-					'http://www.cakephp.org/',
-					array('target' => '_blank', 'escape' => false)
-				);
-			?>
+
 		</div>
 	</div>
 	<?php echo $this->element('sql_dump'); ?>

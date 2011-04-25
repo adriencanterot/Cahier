@@ -96,7 +96,6 @@ ul, li {
 }
 #content{
 	background: #fff;
-	clear: both;
 	color: #333;
 	padding: 10px 20px 40px 20px;
 	overflow: auto;
@@ -111,10 +110,6 @@ ul, li {
 div.form,
 div.index,
 div.view {
-	float:right;
-	width:76%;
-	border-left:1px solid #666;
-	padding:10px 2%;
 }
 div.actions {
 	float:left;
@@ -131,7 +126,6 @@ div.actions h3 {
 table {
 	background: #fff;
 	border-right:0;
-	clear: both;
 	color: #333;
 	margin-bottom: 10px;
 	width: 100%;
@@ -191,7 +185,6 @@ div.paging {
 	background:#fff;
 	color: #ccc;
 	margin-top: 1em;
-	clear:both;
 }
 div.paging span.disabled {
 	color: #ddd;
@@ -225,7 +218,6 @@ dd {
 
 /** Forms **/
 form {
-	clear: both;
 	margin-right: 20px;
 	padding: 0;
 	width: 95%;
@@ -251,11 +243,9 @@ fieldset fieldset legend {
 	font-weight: normal;
 }
 fieldset fieldset div {
-	clear: left;
 	margin: 0 20px;
 }
 form div {
-	clear: both;
 	margin-bottom: 1em;
 	padding: .5em;
 	vertical-align: text-top;
@@ -273,7 +263,6 @@ form .required label:after {
 }
 form div.submit {
 	border: 0;
-	clear: both;
 	margin-top: 10px;
 }
 label {
@@ -282,14 +271,12 @@ label {
 	margin-bottom:3px;
 }
 input, textarea {
-	clear: both;
 	font-size: 140%;
 	font-family: "frutiger linotype", "lucida grande", "verdana", sans-serif;
 	padding: 1%;
 	width:98%;
 }
 select {
-	clear: both;
 	font-size: 120%;
 	vertical-align: text-bottom;
 }
@@ -338,7 +325,6 @@ form .submit input[type=submit]:hover {
 
 /** Notices and Errors **/
 div.message {
-	clear: both;
 	color: #fff;
 	font-size: 140%;
 	font-weight: bold;
@@ -347,7 +333,6 @@ div.message {
 	padding: 5px;
 }
 div.error-message {
-	clear: both;
 	color: #fff;
 	font-weight: bold;
 	background: #c73e14;
@@ -395,7 +380,6 @@ div.actions li {
 div.actions ul li a {
 	font-weight: normal;
 	display: block;
-	clear: both;
 }
 div.actions ul li a:hover {
 	text-decoration: underline;
@@ -427,7 +411,6 @@ td.actions a:hover {
 
 /** Related **/
 div.related {
-	clear: both;
 	display: block;
 }
 
@@ -467,7 +450,6 @@ div.cake-stack-trace pre, div.cake-code-dump pre {
 	overflow: auto;
 }
 div.cake-code-dump pre, div.cake-code-dump pre code {
-	clear: both;
 	font-size: 12px;
 	line-height: 15px;
 	margin: 4px 2px;

@@ -1,3 +1,3 @@
-<? foreach($eventlist as $element): ?>
-    <? echo $element['Event']['name']; ?><br>
+<? foreach($eventlist as $key => $element): ?>
+    <? print_r($element); ?><br>
 <?endforeach;?>

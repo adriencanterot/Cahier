@@ -3,8 +3,8 @@ class StudentsController extends AppController {
 	var $scaffold;
 	
 	function beforeFilter() {
+            $this->allow('login', 'signin');
             parent::beforeFilter();
-		$this->allow('login', 'signin');
 	}
 	
 	

@@ -21,5 +21,11 @@ class DocumentsController extends AppController {
 	function show($id) {
 		$this->set('doclist', $this->Document->DocumentElement->find("all", array("conditions" => array('document_id' => $id))));
 	}
+        
+        function showbysubject($id) {
+            $this->set('documentlist', $this->Document->find('all', array(
+                'conditions' => array('subject_id' => $id)
+            )));
+        }
 }
 ?>

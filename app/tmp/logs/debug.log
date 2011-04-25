@@ -1,0 +1,7 @@
+2011-04-25 12:03:09 Notice: Notice (1024): Please change the value of 'Security.salt' in app/config/core.php to a salt value specific to your application in [/Users/adriencanterot/Sites/Cahier/cake/libs/debugger.php, line 684]
+2011-04-25 12:03:09 Notice: Notice (1024): Please change the value of 'Security.cipherSeed' in app/config/core.php to a numeric (digits only) seed value specific to your application in [/Users/adriencanterot/Sites/Cahier/cake/libs/debugger.php, line 688]
+2011-04-25 12:04:58 Notice: Notice (8): Undefined property: HomesController::$Document in [/Users/adriencanterot/Sites/Cahier/app/app_controller.php, line 10]
+2011-04-25 13:22:59 Notice: Notice (1024): Please change the value of 'Security.salt' in app/config/core.php to a salt value specific to your application in [/Users/adriencanterot/Sites/Cahier/cake/libs/debugger.php, line 684]
+2011-04-25 13:22:59 Notice: Notice (1024): Please change the value of 'Security.cipherSeed' in app/config/core.php to a numeric (digits only) seed value specific to your application in [/Users/adriencanterot/Sites/Cahier/cake/libs/debugger.php, line 688]
+2011-04-25 13:30:14 Notice: Notice (8): Undefined index:  type_id in [/Users/adriencanterot/Sites/Cahier/app/views/documents/index.ctp, line 14]
+2011-04-25 13:48:59 Notice: Notice (8): Undefined variable: subjectlist in [/Users/adriencanterot/Sites/Cahier/app/views/elements/subjects_documents.ctp, line 1]

@@ -52,9 +52,9 @@
 
                     
                     <div id ="left">
-                        <h4> Documents </h4>
-                        <h5>Mes documents</h5>
-                        <? echo $this->element('documents', array('doclist' => $mydocs)); ?>
+                        <h3> Documents </h3>
+                        <h4>Par matiere</h4>
+                            <? echo $this->element('subjects_documents', array('subjectlist' => $subjects)); ?>
                     </div>
 
                     <div id ="right">
@@ -64,8 +64,7 @@
                     
                     <div id ="center">
                         
-                        <?php echo $this->Session->flash(); ?>
-			<div><?php echo $session->read('current_user.name'); ?></div>
+			<h4>Bonjour <?php echo $session->read('current_user.name'); ?> !</h4>
 			<?php echo $content_for_layout; ?>
 
                     </div>

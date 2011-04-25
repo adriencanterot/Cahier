@@ -6,7 +6,7 @@
 	</tr>
 	<? foreach($doclist as $e): ?>
 	<tr>
-		<td><? echo $html->link($e['DocumentElement']['page_number'], '/'.$e['DocumentElement']['path'])?></td>
+		<td><? echo $html->link('Page '.($e['DocumentElement']['page_number']+1), '/'.$e['DocumentElement']['path'])?></td>
 	</tr>
 	<? endforeach;?>
 	

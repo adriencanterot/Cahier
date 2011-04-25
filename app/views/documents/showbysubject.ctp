@@ -1,9 +1,9 @@
 <table>
+    
 	<tr>
 		<th>Name</th>
-		<th>Student</th>
+		<th>Auteur</th>
 		<th>Type</th>
-		<th>Subject</th>
 		<th>Voir</th>
 		
 	</tr>
@@ -12,7 +12,6 @@
 		<td><? echo $e['Document']['name']?></td>
 		<td><? echo $e['Student']['name']?></td>
 		<td><? echo $e['Document']['type']?></td>
-		<td><? echo $e['Subject']['name']?></td>
 		<td>
 			<? echo $html->link('Voir les fichiers', '/documents/show/'.$e['Document']['id']); ?>
 		</td>

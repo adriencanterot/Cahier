@@ -8,10 +8,13 @@ class AppController extends Controller {
                 $this->layout = 'homes';
                 $this->loadModel('Document');
                 $this->loadModel('Event');
+                $this->loadModel('Subject');
                 $mydocs = $this->Document->find('all', array('conditions' => array('student_id' => $this->user())));
                 $events = $this->Event->find('all');
+                $subjects = $this->Subject->find('all');
                 $this->set('mydocs', $mydocs);
                 $this->set('events', $events);
+                $this->set('subjects', $subjects);
 	}
 		
 	function create_session($member) {

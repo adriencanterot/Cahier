@@ -54,13 +54,14 @@
                     <div id ="left">
                         <h3> Documents </h3>
                         <h4>Par matiere</h4>
-                            <? echo $this->element('subjects_documents', array('subjectlist' => $subjects)); ?>
+                            <? echo $this->element('subjects_documents', array('subjectlist' => $subjectlist)); ?>
                     </div>
 
                     <div id ="right">
                         <h4>Devoirs à faire</h4>
-                        <? echo $this->element('events', array('eventlist' => $events)); ?>
-                        <? echo $this->element('ajouter_devoir'); ?>
+                        <? echo $this->element('eventlist', array('eventlist' => $eventlist)); ?>
+                        <? echo $this->element('add_event', array('subjects' => $subjects,
+                                                                  'documents' => $documents)); ?>
                         
                     </div>
                     
@@ -68,6 +69,7 @@
                         
 			<h4>Bonjour <?php echo $session->read('current_user.name'); ?> !</h4>
 			<?php echo $content_for_layout; ?>
+
 
                     </div>
                     

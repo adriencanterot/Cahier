@@ -4,20 +4,36 @@ class AppController extends Controller {
 	var $allowance = array();
 	
 	function beforeFilter() {
+            
 		$this->restrict();
                 $this->layout = 'homes';
+                
+                $this->loadblocks();
+
+	}
+        
+        function event_form() {
+            $this->set('subjects', $this->Subject->find('list'));
+            $this->set('documents', $this->Document->find('list'));
+        }
+        
+        function loadblocks() {
                 $this->loadModel('Subject');
                 $this->loadModel('Document');
                 $this->loadModel('Event');
-
                 
+                //events
+                $this->set('eventlist', $this->Event->find('list'));
                 
+                //documents
                 $this->set('mydocs', 
                         $mydocs = $this->Document->find('all', array('conditions' => 
                             array('student_id' => $this->user()))));
-                $this->set('events', $this->Event->find('list'));
-                $this->set('subjects', $this->Subject->find('list'));
-	}
+                
+                //subjects
+                $this->set('subjectlist', $this->Subject->find('list'));
+                $this->event_form();
+        }
 		
 	function create_session($member) {
 		$this->Session->write('current_user', $member['Student']);

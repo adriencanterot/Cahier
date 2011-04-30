@@ -13,6 +13,10 @@ class EventsController extends AppController {
     //put your code here
     var $scaffold;
     
+    function index() {
+        $this->set('eventlist', $this->Event->find('all'));
+    }
+    
     function add() {
 		
 	if(!empty($this->data)) {
@@ -23,6 +27,16 @@ class EventsController extends AppController {
 		}
 	}
 	
+    }
+    
+    function view($id) {
+            $event = $this->Document->Event->find('first',array(
+                'conditions' => array('Event.id' => $id)));
+            $this->set('event', $event);
+            $this->set('related', $this->Document->related($event));
+            $this->set('id', $id);
+            $this->set('discussion', $this->Discussion->find('all', array('conditions' => array('Discussion.event_id' => $id))));
+            $this->discussion_type = 'Event';
     }
 }
 ?>

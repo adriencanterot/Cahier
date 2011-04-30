@@ -3,7 +3,7 @@ class Document extends AppModel {
 	
 	var $belongsTo = array("Subject", "Student");
         var $hasAndBelongsToMany = "Event";
-	var $hasMany = array("DocumentElement");
+	var $hasMany = array("DocumentElement", "Discussion");
 	
 	function aftersave() {
 		if(!empty($this->data['Document']['file'])) {
@@ -30,5 +30,14 @@ class Document extends AppModel {
 		}
 		return true;
 	}
+        
+        function related($event) {
+            $this->recursive = 0;
+            $related = array();
+            foreach($event['Document'] as $e) {
+                $related[] = $this->find('first', array('conditions' => array('Document.id' => $e['id'])));
+            }
+            return $related;
+        }
 };
 ?>

@@ -30,6 +30,7 @@
 		echo $this->Html->css('generic');
                 echo $this->Html->css('cahier');
 		echo $this->Html->script('addremove.js');
+                echo $html->script('jquery');
 
 		echo $scripts_for_layout;
 	?>
@@ -59,7 +60,7 @@
 
                     <div id ="right">
                         <h4>Devoirs à faire</h4>
-                        <? echo $this->element('eventlist', array('eventlist' => $eventlist)); ?>
+                        <? echo $this->element('eventlist', array('eventlist' => $eventelement)); ?>
                         <? echo $this->element('add_event', array('subjects' => $subjects,
                                                                   'documents' => $documents)); ?>
                         
@@ -72,14 +73,16 @@
 
 
                     </div>
+                    <? if(isset($debug)) { echo('<pre>');
+                                           print_r($debug); 
+                                           echo('</pre>'); } ?>
                     
-			
 
 		</div>
 		<div id="footer">
-
+                      
 		</div>
 	</div>
-	<?php echo $this->element('sql_dump'); ?>
+	<?php echo $this->element('sql_dump'); ?>-->
 </body>
 </html>

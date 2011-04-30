@@ -5,8 +5,9 @@
  */
 class Event extends AppModel {
     
-    var $hasAndBelongsToMany= "Documents";
+    var $hasAndBelongsToMany= "Document";
     var $belongsTo = array("Subject", "Student");
+    var $hasMany = array('Discussions');
     
 }
 

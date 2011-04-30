@@ -1,6 +1,8 @@
 <?
 class AppController extends Controller {
-	var $components = array('Session');
+	var $components = array('Session', 'RequestHandler');
+        var $helpers = array('Js' => array('Jquery'), 'Session', 'Date');
+        var $discussion_type = '';
 	var $allowance = array();
 	
 	function beforeFilter() {
@@ -21,9 +23,10 @@ class AppController extends Controller {
                 $this->loadModel('Subject');
                 $this->loadModel('Document');
                 $this->loadModel('Event');
+                $this->loadModel('Discussion');
                 
                 //events
-                $this->set('eventlist', $this->Event->find('list'));
+                $this->set('eventelement', $this->Event->find('list'));
                 
                 //documents
                 $this->set('mydocs', 
@@ -71,6 +74,10 @@ class AppController extends Controller {
         
         function notice($string) {
             $this->Session->setFlash($string);
+        }
+        
+        function debug($data) {
+            $this->set('debug', $data);
         }
 	
 }

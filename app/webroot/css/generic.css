@@ -23,19 +23,19 @@
 
 /** General Style Info **/
 body {
-	background: #003d4c;
+	background: #2b2922;
 	color: #fff;
 	font-family:'lucida grande',verdana,helvetica,arial,sans-serif;
 	font-size:90%;
 	margin: 0;
 }
 a {
-	color: #003d4c;
+	color: #A39770;
 	text-decoration: underline;
 	font-weight: bold;
 }
 a:hover {
-	color: #367889;
+	color: #A39770;
 	text-decoration:none;
 }
 a img {
@@ -47,22 +47,22 @@ h1, h2, h3, h4 {
 }
 h1 {
 	background:#fff;
-	color: #003d4c;
+	color: #A32500;
 	font-size: 100%;
 }
 h2 {
 	background:#fff;
-	color: #e32;
+	color: #A32500;
 	font-family:'Gill Sans','lucida grande', helvetica, arial, sans-serif;
 	font-size: 190%;
 }
 h3 {
-	color: #993;
+	color: #A32500;
 	font-family:'Gill Sans','lucida grande', helvetica, arial, sans-serif;
 	font-size: 165%;
 }
 h4 {
-	color: #993;
+	color: #A32500;
 	font-weight: normal;
 }
 ul, li {

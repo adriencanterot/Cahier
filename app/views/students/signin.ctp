@@ -1,3 +1,4 @@
+<div id = 'signup'>
 <h3>Inscription</h3>
 <?php
     echo $this->Form->create('Student', array('action' => 'signin'));
@@ -11,3 +12,5 @@
 
 
 ?>
+<? echo $html->link('Retour', '/students/login')?>
+</div>

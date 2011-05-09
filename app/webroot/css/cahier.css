@@ -64,6 +64,14 @@
 	color:black;
 
 }
+#signup {
+	background : #fff;
+	width : 300px;
+	height : 570px;
+    padding : 20px 30px 40px 30px;
+    margin-top: 30px;
+	margin:auto;
+}
 #introduction p {
 	text-align:justify;
 }

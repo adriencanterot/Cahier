@@ -1,0 +1,263 @@
+// !$*UTF8*$!
+{
+	CB28264913766889000D69DF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CB53AF0313758FA300263390 /* login.ctp */;
+		name = "login.ctp: 1";
+		rLen = 0;
+		rLoc = 13;
+		rType = 0;
+		vrLen = 386;
+		vrLoc = 0;
+	};
+	CB28264A13766889000D69DF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CB53AE7613758FA300263390 /* core.php */;
+		name = "core.php: 204";
+		rLen = 58;
+		rLoc = 6243;
+		rType = 0;
+		vrLen = 1020;
+		vrLoc = 0;
+	};
+	CB28264B13766889000D69DF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CB53AE9813758FA300263390 /* student.php */;
+		name = "student.php: 4";
+		rLen = 8;
+		rLoc = 42;
+		rType = 0;
+		vrLen = 927;
+		vrLoc = 1086;
+	};
+	CB28264E13766889000D69DF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CB53AE7413758FA300263390 /* acl.ini.php */;
+		name = "acl.ini.php: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1039;
+		vrLoc = 0;
+	};
+	CB53AE5113758D5700263390 /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		addToTargets = (
+		);
+		codeSenseManager = CB53AE5613758D5700263390 /* Code sense */;
+		ignoreBreakpointsInProjectsDict = {
+		};
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					696,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 326531919;
+			PBXWorkspaceStateSaveDate = 326531919;
+		};
+		perUserProjectItems = {
+			CB28264913766889000D69DF /* PBXTextBookmark */ = CB28264913766889000D69DF /* PBXTextBookmark */;
+			CB28264A13766889000D69DF /* PBXTextBookmark */ = CB28264A13766889000D69DF /* PBXTextBookmark */;
+			CB28264B13766889000D69DF /* PBXTextBookmark */ = CB28264B13766889000D69DF /* PBXTextBookmark */;
+			CB28264E13766889000D69DF /* PBXTextBookmark */ = CB28264E13766889000D69DF /* PBXTextBookmark */;
+			CB53AF3A1375937200263390 /* PBXTextBookmark */ = CB53AF3A1375937200263390 /* PBXTextBookmark */;
+			CB53AF3D1375937200263390 /* PBXTextBookmark */ = CB53AF3D1375937200263390 /* PBXTextBookmark */;
+			CB59935013767D0300098045 /* PBXTextBookmark */ = CB59935013767D0300098045 /* PBXTextBookmark */;
+			CB59935713767F0900098045 /* PBXTextBookmark */ = CB59935713767F0900098045 /* PBXTextBookmark */;
+			CB59936B137680D500098045 /* PBXTextBookmark */ = CB59936B137680D500098045 /* PBXTextBookmark */;
+			CB59936C137680D500098045 /* PBXTextBookmark */ = CB59936C137680D500098045 /* PBXTextBookmark */;
+			CB59936E137682E800098045 /* PBXTextBookmark */ = CB59936E137682E800098045 /* PBXTextBookmark */;
+		};
+		sourceControlManager = CB53AE5513758D5700263390 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	CB53AE5513758D5700263390 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	CB53AE5613758D5700263390 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	CB53AE7213758FA300263390 /* app_controller.php */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1008, 1144}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1643}";
+		};
+	};
+	CB53AE7413758FA300263390 /* acl.ini.php */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {874, 910}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1039}";
+		};
+	};
+	CB53AE7513758FA300263390 /* bootstrap.php */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {874, 663}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{914, 1458}";
+		};
+	};
+	CB53AE7613758FA300263390 /* core.php */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {874, 3952}}";
+			sepNavSelRange = "{6243, 58}";
+			sepNavVisRange = "{0, 1020}";
+		};
+	};
+	CB53AE7813758FA300263390 /* routes.php */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {874, 442}}";
+			sepNavSelRange = "{1162, 0}";
+			sepNavVisRange = "{10, 1315}";
+		};
+	};
+	CB53AE9813758FA300263390 /* student.php */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {874, 793}}";
+			sepNavSelRange = "{42, 8}";
+			sepNavVisRange = "{1086, 927}";
+		};
+	};
+	CB53AEEB13758FA300263390 /* index.ctp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {874, 411}}";
+			sepNavSelRange = "{253, 0}";
+			sepNavVisRange = "{0, 268}";
+		};
+	};
+	CB53AF0313758FA300263390 /* login.ctp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {874, 395}}";
+			sepNavSelRange = "{13, 0}";
+			sepNavVisRange = "{0, 386}";
+		};
+	};
+	CB53AF0713758FA300263390 /* .htaccess */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {874, 401}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 185}";
+		};
+	};
+	CB53AF0913758FA300263390 /* cahier.css */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {874, 1105}}";
+			sepNavSelRange = "{1294, 0}";
+			sepNavVisRange = "{917, 379}";
+			sepNavWindowFrame = "{{15, 63}, {750, 715}}";
+		};
+	};
+	CB53AF1413758FA300263390 /* addremove.js */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {691, 587}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 53}";
+			sepNavWindowFrame = "{{15, 63}, {750, 715}}";
+		};
+	};
+	CB53AF1B13758FA300263390 /* scriptaculous.js */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {874, 819}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1565}";
+		};
+	};
+	CB53AF3A1375937200263390 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CB53AF0713758FA300263390 /* .htaccess */;
+		name = ".htaccess: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 185;
+		vrLoc = 0;
+	};
+	CB53AF3D1375937200263390 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CB53AF1B13758FA300263390 /* scriptaculous.js */;
+		name = "scriptaculous.js: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1565;
+		vrLoc = 0;
+	};
+	CB59935013767D0300098045 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CB53AE7513758FA300263390 /* bootstrap.php */;
+		name = "bootstrap.php: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1458;
+		vrLoc = 914;
+	};
+	CB59935713767F0900098045 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CB53AE7813758FA300263390 /* routes.php */;
+		name = "routes.php: 29";
+		rLen = 0;
+		rLoc = 1162;
+		rType = 0;
+		vrLen = 1315;
+		vrLoc = 10;
+	};
+	CB59936B137680D500098045 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CB53AEEB13758FA300263390 /* index.ctp */;
+		name = "index.ctp: 15";
+		rLen = 0;
+		rLoc = 253;
+		rType = 0;
+		vrLen = 268;
+		vrLoc = 0;
+	};
+	CB59936C137680D500098045 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CB53AF0913758FA300263390 /* cahier.css */;
+		name = "cahier.css: 53";
+		rLen = 0;
+		rLoc = 927;
+		rType = 0;
+		vrLen = 404;
+		vrLoc = 917;
+	};
+	CB59936E137682E800098045 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CB53AF0913758FA300263390 /* cahier.css */;
+		name = "cahier.css: 83";
+		rLen = 0;
+		rLoc = 1294;
+		rType = 0;
+		vrLen = 379;
+		vrLoc = 917;
+	};
+}

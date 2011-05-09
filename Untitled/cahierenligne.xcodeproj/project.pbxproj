@@ -1,0 +1,779 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXFileReference section */
+		CB53AE7113758FA300263390 /* .htaccess */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .htaccess; sourceTree = "<group>"; };
+		CB53AE7213758FA300263390 /* app_controller.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = app_controller.php; sourceTree = "<group>"; };
+		CB53AE7413758FA300263390 /* acl.ini.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = acl.ini.php; sourceTree = "<group>"; };
+		CB53AE7513758FA300263390 /* bootstrap.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = bootstrap.php; sourceTree = "<group>"; };
+		CB53AE7613758FA300263390 /* core.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = core.php; sourceTree = "<group>"; };
+		CB53AE7713758FA300263390 /* database.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = database.php; sourceTree = "<group>"; };
+		CB53AE7813758FA300263390 /* routes.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = routes.php; sourceTree = "<group>"; };
+		CB53AE7A13758FA300263390 /* db_acl.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = db_acl.php; sourceTree = "<group>"; };
+		CB53AE7B13758FA300263390 /* i18n.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = i18n.php; sourceTree = "<group>"; };
+		CB53AE7C13758FA300263390 /* sessions.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = sessions.php; sourceTree = "<group>"; };
+		CB53AE7F13758FA300263390 /* empty */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = empty; sourceTree = "<group>"; };
+		CB53AE8013758FA300263390 /* discussions_controller.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = discussions_controller.php; sourceTree = "<group>"; };
+		CB53AE8113758FA300263390 /* documents_controller.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = documents_controller.php; sourceTree = "<group>"; };
+		CB53AE8213758FA300263390 /* events_controller.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = events_controller.php; sourceTree = "<group>"; };
+		CB53AE8313758FA300263390 /* homes_controller.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = homes_controller.php; sourceTree = "<group>"; };
+		CB53AE8413758FA300263390 /* students_controller.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = students_controller.php; sourceTree = "<group>"; };
+		CB53AE8513758FA300263390 /* subjects_controller.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = subjects_controller.php; sourceTree = "<group>"; };
+		CB53AE8613758FA300263390 /* index.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = index.php; sourceTree = "<group>"; };
+		CB53AE8813758FA300263390 /* empty */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = empty; sourceTree = "<group>"; };
+		CB53AE8C13758FA300263390 /* empty */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = empty; sourceTree = "<group>"; };
+		CB53AE8F13758FA300263390 /* empty */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = empty; sourceTree = "<group>"; };
+		CB53AE9113758FA300263390 /* empty */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = empty; sourceTree = "<group>"; };
+		CB53AE9213758FA300263390 /* discussion.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = discussion.php; sourceTree = "<group>"; };
+		CB53AE9313758FA300263390 /* document.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = document.php; sourceTree = "<group>"; };
+		CB53AE9413758FA300263390 /* documentelement.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = documentelement.php; sourceTree = "<group>"; };
+		CB53AE9513758FA300263390 /* event.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = event.php; sourceTree = "<group>"; };
+		CB53AE9613758FA300263390 /* home.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = home.php; sourceTree = "<group>"; };
+		CB53AE9713758FA300263390 /* notification.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = notification.php; sourceTree = "<group>"; };
+		CB53AE9813758FA300263390 /* student.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = student.php; sourceTree = "<group>"; };
+		CB53AE9913758FA300263390 /* subject.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = subject.php; sourceTree = "<group>"; };
+		CB53AE9B13758FA300263390 /* empty */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = empty; sourceTree = "<group>"; };
+		CB53AE9F13758FA300263390 /* empty */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = empty; sourceTree = "<group>"; };
+		CB53AEA113758FA300263390 /* empty */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = empty; sourceTree = "<group>"; };
+		CB53AEA313758FA300263390 /* empty */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = empty; sourceTree = "<group>"; };
+		CB53AEA513758FA300263390 /* empty */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = empty; sourceTree = "<group>"; };
+		CB53AEA713758FA300263390 /* empty */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = empty; sourceTree = "<group>"; };
+		CB53AEA913758FA300263390 /* empty */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = empty; sourceTree = "<group>"; };
+		CB53AEAB13758FA300263390 /* empty */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = empty; sourceTree = "<group>"; };
+		CB53AEAF13758FA300263390 /* cake_model_default_cahier-dev_list */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cake_model_default_cahier-dev_list"; sourceTree = "<group>"; };
+		CB53AEB013758FA300263390 /* cake_model_default_document_elements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cake_model_default_document_elements; sourceTree = "<group>"; };
+		CB53AEB113758FA300263390 /* cake_model_default_documents */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cake_model_default_documents; sourceTree = "<group>"; };
+		CB53AEB213758FA300263390 /* cake_model_default_documents_events */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cake_model_default_documents_events; sourceTree = "<group>"; };
+		CB53AEB313758FA300263390 /* cake_model_default_events */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cake_model_default_events; sourceTree = "<group>"; };
+		CB53AEB413758FA300263390 /* cake_model_default_students */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cake_model_default_students; sourceTree = "<group>"; };
+		CB53AEB513758FA300263390 /* cake_model_default_subjects */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cake_model_default_subjects; sourceTree = "<group>"; };
+		CB53AEB613758FA300263390 /* empty */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = empty; sourceTree = "<group>"; };
+		CB53AEB813758FA300263390 /* cake_core_default_en-us */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cake_core_default_en-us"; sourceTree = "<group>"; };
+		CB53AEB913758FA300263390 /* cake_core_dir_map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cake_core_dir_map; sourceTree = "<group>"; };
+		CB53AEBA13758FA300263390 /* cake_core_file_map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cake_core_file_map; sourceTree = "<group>"; };
+		CB53AEBB13758FA300263390 /* cake_core_object_map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cake_core_object_map; sourceTree = "<group>"; };
+		CB53AEBC13758FA300263390 /* empty */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = empty; sourceTree = "<group>"; };
+		CB53AEBE13758FA300263390 /* empty */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = empty; sourceTree = "<group>"; };
+		CB53AEC013758FA300263390 /* debug.log */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = debug.log; sourceTree = "<group>"; };
+		CB53AEC113758FA300263390 /* empty */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = empty; sourceTree = "<group>"; };
+		CB53AEC213758FA300263390 /* error.log */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = error.log; sourceTree = "<group>"; };
+		CB53AEC413758FA300263390 /* empty */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = empty; sourceTree = "<group>"; };
+		CB53AEC613758FA300263390 /* empty */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = empty; sourceTree = "<group>"; };
+		CB53AECA13758FA300263390 /* empty */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = empty; sourceTree = "<group>"; };
+		CB53AECC13758FA300263390 /* empty */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = empty; sourceTree = "<group>"; };
+		CB53AECF13758FA300263390 /* add.ctp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = add.ctp; sourceTree = "<group>"; };
+		CB53AED013758FA300263390 /* index.ctp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = index.ctp; sourceTree = "<group>"; };
+		CB53AED113758FA300263390 /* show.ctp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = show.ctp; sourceTree = "<group>"; };
+		CB53AED213758FA300263390 /* showbyevent.ctp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = showbyevent.ctp; sourceTree = "<group>"; };
+		CB53AED413758FA300263390 /* add_event.ctp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = add_event.ctp; sourceTree = "<group>"; };
+		CB53AED513758FA300263390 /* discussion.ctp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = discussion.ctp; sourceTree = "<group>"; };
+		CB53AED613758FA300263390 /* documents.ctp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = documents.ctp; sourceTree = "<group>"; };
+		CB53AED913758FA300263390 /* empty */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = empty; sourceTree = "<group>"; };
+		CB53AEDB13758FA300263390 /* empty */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = empty; sourceTree = "<group>"; };
+		CB53AEDC13758FA300263390 /* empty */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = empty; sourceTree = "<group>"; };
+		CB53AEDD13758FA300263390 /* eventlist.ctp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = eventlist.ctp; sourceTree = "<group>"; };
+		CB53AEDE13758FA300263390 /* notifications.ctp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = notifications.ctp; sourceTree = "<group>"; };
+		CB53AEDF13758FA300263390 /* subjects_documents.ctp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = subjects_documents.ctp; sourceTree = "<group>"; };
+		CB53AEE013758FA300263390 /* topmenu.ctp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = topmenu.ctp; sourceTree = "<group>"; };
+		CB53AEE213758FA300263390 /* empty */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = empty; sourceTree = "<group>"; };
+		CB53AEE413758FA300263390 /* add.ctp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = add.ctp; sourceTree = "<group>"; };
+		CB53AEE513758FA300263390 /* index.ctp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = index.ctp; sourceTree = "<group>"; };
+		CB53AEE613758FA300263390 /* view.ctp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = view.ctp; sourceTree = "<group>"; };
+		CB53AEE813758FA300263390 /* date.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = date.php; sourceTree = "<group>"; };
+		CB53AEE913758FA300263390 /* empty */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = empty; sourceTree = "<group>"; };
+		CB53AEEB13758FA300263390 /* index.ctp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = index.ctp; sourceTree = "<group>"; };
+		CB53AEED13758FA300263390 /* default.ctp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = default.ctp; sourceTree = "<group>"; };
+		CB53AEF013758FA300263390 /* empty */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = empty; sourceTree = "<group>"; };
+		CB53AEF213758FA300263390 /* empty */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = empty; sourceTree = "<group>"; };
+		CB53AEF313758FA300263390 /* homes.ctp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = homes.ctp; sourceTree = "<group>"; };
+		CB53AEF513758FA300263390 /* empty */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = empty; sourceTree = "<group>"; };
+		CB53AEF613758FA300263390 /* login.ctp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = login.ctp; sourceTree = "<group>"; };
+		CB53AEF813758FA300263390 /* empty */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = empty; sourceTree = "<group>"; };
+		CB53AEFA13758FA300263390 /* empty */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = empty; sourceTree = "<group>"; };
+		CB53AEFC13758FA300263390 /* empty */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = empty; sourceTree = "<group>"; };
+		CB53AEFE13758FA300263390 /* edit.ctp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = edit.ctp; sourceTree = "<group>"; };
+		CB53AEFF13758FA300263390 /* empty */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = empty; sourceTree = "<group>"; };
+		CB53AF0013758FA300263390 /* index.ctp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = index.ctp; sourceTree = "<group>"; };
+		CB53AF0113758FA300263390 /* view.ctp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = view.ctp; sourceTree = "<group>"; };
+		CB53AF0313758FA300263390 /* login.ctp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = login.ctp; sourceTree = "<group>"; };
+		CB53AF0413758FA300263390 /* logout.ctp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = logout.ctp; sourceTree = "<group>"; };
+		CB53AF0513758FA300263390 /* signin.ctp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = signin.ctp; sourceTree = "<group>"; };
+		CB53AF0713758FA300263390 /* .htaccess */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .htaccess; sourceTree = "<group>"; };
+		CB53AF0913758FA300263390 /* cahier.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = cahier.css; sourceTree = "<group>"; };
+		CB53AF0A13758FA300263390 /* generic.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = generic.css; sourceTree = "<group>"; };
+		CB53AF0B13758FA300263390 /* css.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = css.php; sourceTree = "<group>"; };
+		CB53AF0C13758FA300263390 /* favicon.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = favicon.ico; sourceTree = "<group>"; };
+		CB53AF0E13758FA300263390 /* empty */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = empty; sourceTree = "<group>"; };
+		CB53AF1013758FA300263390 /* cake.icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cake.icon.png; sourceTree = "<group>"; };
+		CB53AF1113758FA300263390 /* cake.power.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cake.power.gif; sourceTree = "<group>"; };
+		CB53AF1213758FA300263390 /* index.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = index.php; sourceTree = "<group>"; };
+		CB53AF1413758FA300263390 /* addremove.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = addremove.js; sourceTree = "<group>"; };
+		CB53AF1513758FA300263390 /* builder.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = builder.js; sourceTree = "<group>"; };
+		CB53AF1613758FA300263390 /* controls.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = controls.js; sourceTree = "<group>"; };
+		CB53AF1713758FA300263390 /* dragdrop.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = dragdrop.js; sourceTree = "<group>"; };
+		CB53AF1813758FA300263390 /* effects.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = effects.js; sourceTree = "<group>"; };
+		CB53AF1913758FA300263390 /* jquery.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jquery.js; sourceTree = "<group>"; };
+		CB53AF1A13758FA300263390 /* prototype.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = prototype.js; sourceTree = "<group>"; };
+		CB53AF1B13758FA300263390 /* scriptaculous.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = scriptaculous.js; sourceTree = "<group>"; };
+		CB53AF1C13758FA300263390 /* slider.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = slider.js; sourceTree = "<group>"; };
+		CB53AF1D13758FA300263390 /* sound.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = sound.js; sourceTree = "<group>"; };
+		CB53AF1E13758FA300263390 /* unittest.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = unittest.js; sourceTree = "<group>"; };
+		CB53AF1F13758FA300263390 /* test.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = test.php; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		CB53AE4F13758D5700263390 = {
+			isa = PBXGroup;
+			children = (
+				CB53AE7013758FA300263390 /* app */,
+			);
+			sourceTree = "<group>";
+		};
+		CB53AE7013758FA300263390 /* app */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AE7113758FA300263390 /* .htaccess */,
+				CB53AE7213758FA300263390 /* app_controller.php */,
+				CB53AE7313758FA300263390 /* config */,
+				CB53AE7D13758FA300263390 /* controllers */,
+				CB53AE8613758FA300263390 /* index.php */,
+				CB53AE8713758FA300263390 /* libs */,
+				CB53AE8913758FA300263390 /* locale */,
+				CB53AE8D13758FA300263390 /* models */,
+				CB53AE9A13758FA300263390 /* plugins */,
+				CB53AE9C13758FA300263390 /* tests */,
+				CB53AEAC13758FA300263390 /* tmp */,
+				CB53AEC713758FA300263390 /* vendors */,
+				CB53AECD13758FA300263390 /* views */,
+				CB53AF0613758FA300263390 /* webroot */,
+			);
+			name = app;
+			path = ../app;
+			sourceTree = SOURCE_ROOT;
+		};
+		CB53AE7313758FA300263390 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AE7413758FA300263390 /* acl.ini.php */,
+				CB53AE7513758FA300263390 /* bootstrap.php */,
+				CB53AE7613758FA300263390 /* core.php */,
+				CB53AE7713758FA300263390 /* database.php */,
+				CB53AE7813758FA300263390 /* routes.php */,
+				CB53AE7913758FA300263390 /* schema */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		CB53AE7913758FA300263390 /* schema */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AE7A13758FA300263390 /* db_acl.php */,
+				CB53AE7B13758FA300263390 /* i18n.php */,
+				CB53AE7C13758FA300263390 /* sessions.php */,
+			);
+			path = schema;
+			sourceTree = "<group>";
+		};
+		CB53AE7D13758FA300263390 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AE7E13758FA300263390 /* components */,
+				CB53AE8013758FA300263390 /* discussions_controller.php */,
+				CB53AE8113758FA300263390 /* documents_controller.php */,
+				CB53AE8213758FA300263390 /* events_controller.php */,
+				CB53AE8313758FA300263390 /* homes_controller.php */,
+				CB53AE8413758FA300263390 /* students_controller.php */,
+				CB53AE8513758FA300263390 /* subjects_controller.php */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		CB53AE7E13758FA300263390 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AE7F13758FA300263390 /* empty */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		CB53AE8713758FA300263390 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AE8813758FA300263390 /* empty */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		CB53AE8913758FA300263390 /* locale */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AE8A13758FA300263390 /* eng */,
+			);
+			path = locale;
+			sourceTree = "<group>";
+		};
+		CB53AE8A13758FA300263390 /* eng */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AE8B13758FA300263390 /* LC_MESSAGES */,
+			);
+			path = eng;
+			sourceTree = "<group>";
+		};
+		CB53AE8B13758FA300263390 /* LC_MESSAGES */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AE8C13758FA300263390 /* empty */,
+			);
+			path = LC_MESSAGES;
+			sourceTree = "<group>";
+		};
+		CB53AE8D13758FA300263390 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AE8E13758FA300263390 /* behaviors */,
+				CB53AE9013758FA300263390 /* datasources */,
+				CB53AE9213758FA300263390 /* discussion.php */,
+				CB53AE9313758FA300263390 /* document.php */,
+				CB53AE9413758FA300263390 /* documentelement.php */,
+				CB53AE9513758FA300263390 /* event.php */,
+				CB53AE9613758FA300263390 /* home.php */,
+				CB53AE9713758FA300263390 /* notification.php */,
+				CB53AE9813758FA300263390 /* student.php */,
+				CB53AE9913758FA300263390 /* subject.php */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		CB53AE8E13758FA300263390 /* behaviors */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AE8F13758FA300263390 /* empty */,
+			);
+			path = behaviors;
+			sourceTree = "<group>";
+		};
+		CB53AE9013758FA300263390 /* datasources */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AE9113758FA300263390 /* empty */,
+			);
+			path = datasources;
+			sourceTree = "<group>";
+		};
+		CB53AE9A13758FA300263390 /* plugins */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AE9B13758FA300263390 /* empty */,
+			);
+			path = plugins;
+			sourceTree = "<group>";
+		};
+		CB53AE9C13758FA300263390 /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AE9D13758FA300263390 /* cases */,
+				CB53AEA813758FA300263390 /* fixtures */,
+				CB53AEAA13758FA300263390 /* groups */,
+			);
+			path = tests;
+			sourceTree = "<group>";
+		};
+		CB53AE9D13758FA300263390 /* cases */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AE9E13758FA300263390 /* behaviors */,
+				CB53AEA013758FA300263390 /* components */,
+				CB53AEA213758FA300263390 /* controllers */,
+				CB53AEA413758FA300263390 /* helpers */,
+				CB53AEA613758FA300263390 /* models */,
+			);
+			path = cases;
+			sourceTree = "<group>";
+		};
+		CB53AE9E13758FA300263390 /* behaviors */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AE9F13758FA300263390 /* empty */,
+			);
+			path = behaviors;
+			sourceTree = "<group>";
+		};
+		CB53AEA013758FA300263390 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AEA113758FA300263390 /* empty */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		CB53AEA213758FA300263390 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AEA313758FA300263390 /* empty */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		CB53AEA413758FA300263390 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AEA513758FA300263390 /* empty */,
+			);
+			path = helpers;
+			sourceTree = "<group>";
+		};
+		CB53AEA613758FA300263390 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AEA713758FA300263390 /* empty */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		CB53AEA813758FA300263390 /* fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AEA913758FA300263390 /* empty */,
+			);
+			path = fixtures;
+			sourceTree = "<group>";
+		};
+		CB53AEAA13758FA300263390 /* groups */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AEAB13758FA300263390 /* empty */,
+			);
+			path = groups;
+			sourceTree = "<group>";
+		};
+		CB53AEAC13758FA300263390 /* tmp */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AEAD13758FA300263390 /* cache */,
+				CB53AEBF13758FA300263390 /* logs */,
+				CB53AEC313758FA300263390 /* sessions */,
+				CB53AEC513758FA300263390 /* tests */,
+			);
+			path = tmp;
+			sourceTree = "<group>";
+		};
+		CB53AEAD13758FA300263390 /* cache */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AEAE13758FA300263390 /* models */,
+				CB53AEB713758FA300263390 /* persistent */,
+				CB53AEBD13758FA300263390 /* views */,
+			);
+			path = cache;
+			sourceTree = "<group>";
+		};
+		CB53AEAE13758FA300263390 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AEAF13758FA300263390 /* cake_model_default_cahier-dev_list */,
+				CB53AEB013758FA300263390 /* cake_model_default_document_elements */,
+				CB53AEB113758FA300263390 /* cake_model_default_documents */,
+				CB53AEB213758FA300263390 /* cake_model_default_documents_events */,
+				CB53AEB313758FA300263390 /* cake_model_default_events */,
+				CB53AEB413758FA300263390 /* cake_model_default_students */,
+				CB53AEB513758FA300263390 /* cake_model_default_subjects */,
+				CB53AEB613758FA300263390 /* empty */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		CB53AEB713758FA300263390 /* persistent */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AEB813758FA300263390 /* cake_core_default_en-us */,
+				CB53AEB913758FA300263390 /* cake_core_dir_map */,
+				CB53AEBA13758FA300263390 /* cake_core_file_map */,
+				CB53AEBB13758FA300263390 /* cake_core_object_map */,
+				CB53AEBC13758FA300263390 /* empty */,
+			);
+			path = persistent;
+			sourceTree = "<group>";
+		};
+		CB53AEBD13758FA300263390 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AEBE13758FA300263390 /* empty */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		CB53AEBF13758FA300263390 /* logs */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AEC013758FA300263390 /* debug.log */,
+				CB53AEC113758FA300263390 /* empty */,
+				CB53AEC213758FA300263390 /* error.log */,
+			);
+			path = logs;
+			sourceTree = "<group>";
+		};
+		CB53AEC313758FA300263390 /* sessions */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AEC413758FA300263390 /* empty */,
+			);
+			path = sessions;
+			sourceTree = "<group>";
+		};
+		CB53AEC513758FA300263390 /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AEC613758FA300263390 /* empty */,
+			);
+			path = tests;
+			sourceTree = "<group>";
+		};
+		CB53AEC713758FA300263390 /* vendors */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AEC813758FA300263390 /* shells */,
+			);
+			path = vendors;
+			sourceTree = "<group>";
+		};
+		CB53AEC813758FA300263390 /* shells */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AEC913758FA300263390 /* tasks */,
+				CB53AECB13758FA300263390 /* templates */,
+			);
+			path = shells;
+			sourceTree = "<group>";
+		};
+		CB53AEC913758FA300263390 /* tasks */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AECA13758FA300263390 /* empty */,
+			);
+			path = tasks;
+			sourceTree = "<group>";
+		};
+		CB53AECB13758FA300263390 /* templates */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AECC13758FA300263390 /* empty */,
+			);
+			path = templates;
+			sourceTree = "<group>";
+		};
+		CB53AECD13758FA300263390 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AECE13758FA300263390 /* documents */,
+				CB53AED313758FA300263390 /* elements */,
+				CB53AEE113758FA300263390 /* errors */,
+				CB53AEE313758FA300263390 /* events */,
+				CB53AEE713758FA300263390 /* helpers */,
+				CB53AEEA13758FA300263390 /* homes */,
+				CB53AEEC13758FA300263390 /* layouts */,
+				CB53AEFB13758FA300263390 /* pages */,
+				CB53AEFD13758FA300263390 /* scaffolds */,
+				CB53AF0213758FA300263390 /* students */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		CB53AECE13758FA300263390 /* documents */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AECF13758FA300263390 /* add.ctp */,
+				CB53AED013758FA300263390 /* index.ctp */,
+				CB53AED113758FA300263390 /* show.ctp */,
+				CB53AED213758FA300263390 /* showbyevent.ctp */,
+			);
+			path = documents;
+			sourceTree = "<group>";
+		};
+		CB53AED313758FA300263390 /* elements */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AED413758FA300263390 /* add_event.ctp */,
+				CB53AED513758FA300263390 /* discussion.ctp */,
+				CB53AED613758FA300263390 /* documents.ctp */,
+				CB53AED713758FA300263390 /* email */,
+				CB53AEDC13758FA300263390 /* empty */,
+				CB53AEDD13758FA300263390 /* eventlist.ctp */,
+				CB53AEDE13758FA300263390 /* notifications.ctp */,
+				CB53AEDF13758FA300263390 /* subjects_documents.ctp */,
+				CB53AEE013758FA300263390 /* topmenu.ctp */,
+			);
+			path = elements;
+			sourceTree = "<group>";
+		};
+		CB53AED713758FA300263390 /* email */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AED813758FA300263390 /* html */,
+				CB53AEDA13758FA300263390 /* text */,
+			);
+			path = email;
+			sourceTree = "<group>";
+		};
+		CB53AED813758FA300263390 /* html */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AED913758FA300263390 /* empty */,
+			);
+			path = html;
+			sourceTree = "<group>";
+		};
+		CB53AEDA13758FA300263390 /* text */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AEDB13758FA300263390 /* empty */,
+			);
+			path = text;
+			sourceTree = "<group>";
+		};
+		CB53AEE113758FA300263390 /* errors */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AEE213758FA300263390 /* empty */,
+			);
+			path = errors;
+			sourceTree = "<group>";
+		};
+		CB53AEE313758FA300263390 /* events */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AEE413758FA300263390 /* add.ctp */,
+				CB53AEE513758FA300263390 /* index.ctp */,
+				CB53AEE613758FA300263390 /* view.ctp */,
+			);
+			path = events;
+			sourceTree = "<group>";
+		};
+		CB53AEE713758FA300263390 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AEE813758FA300263390 /* date.php */,
+				CB53AEE913758FA300263390 /* empty */,
+			);
+			path = helpers;
+			sourceTree = "<group>";
+		};
+		CB53AEEA13758FA300263390 /* homes */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AEEB13758FA300263390 /* index.ctp */,
+			);
+			path = homes;
+			sourceTree = "<group>";
+		};
+		CB53AEEC13758FA300263390 /* layouts */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AEED13758FA300263390 /* default.ctp */,
+				CB53AEEE13758FA300263390 /* email */,
+				CB53AEF313758FA300263390 /* homes.ctp */,
+				CB53AEF413758FA300263390 /* js */,
+				CB53AEF613758FA300263390 /* login.ctp */,
+				CB53AEF713758FA300263390 /* rss */,
+				CB53AEF913758FA300263390 /* xml */,
+			);
+			path = layouts;
+			sourceTree = "<group>";
+		};
+		CB53AEEE13758FA300263390 /* email */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AEEF13758FA300263390 /* html */,
+				CB53AEF113758FA300263390 /* text */,
+			);
+			path = email;
+			sourceTree = "<group>";
+		};
+		CB53AEEF13758FA300263390 /* html */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AEF013758FA300263390 /* empty */,
+			);
+			path = html;
+			sourceTree = "<group>";
+		};
+		CB53AEF113758FA300263390 /* text */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AEF213758FA300263390 /* empty */,
+			);
+			path = text;
+			sourceTree = "<group>";
+		};
+		CB53AEF413758FA300263390 /* js */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AEF513758FA300263390 /* empty */,
+			);
+			path = js;
+			sourceTree = "<group>";
+		};
+		CB53AEF713758FA300263390 /* rss */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AEF813758FA300263390 /* empty */,
+			);
+			path = rss;
+			sourceTree = "<group>";
+		};
+		CB53AEF913758FA300263390 /* xml */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AEFA13758FA300263390 /* empty */,
+			);
+			path = xml;
+			sourceTree = "<group>";
+		};
+		CB53AEFB13758FA300263390 /* pages */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AEFC13758FA300263390 /* empty */,
+			);
+			path = pages;
+			sourceTree = "<group>";
+		};
+		CB53AEFD13758FA300263390 /* scaffolds */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AEFE13758FA300263390 /* edit.ctp */,
+				CB53AEFF13758FA300263390 /* empty */,
+				CB53AF0013758FA300263390 /* index.ctp */,
+				CB53AF0113758FA300263390 /* view.ctp */,
+			);
+			path = scaffolds;
+			sourceTree = "<group>";
+		};
+		CB53AF0213758FA300263390 /* students */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AF0313758FA300263390 /* login.ctp */,
+				CB53AF0413758FA300263390 /* logout.ctp */,
+				CB53AF0513758FA300263390 /* signin.ctp */,
+			);
+			path = students;
+			sourceTree = "<group>";
+		};
+		CB53AF0613758FA300263390 /* webroot */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AF0713758FA300263390 /* .htaccess */,
+				CB53AF0813758FA300263390 /* css */,
+				CB53AF0B13758FA300263390 /* css.php */,
+				CB53AF0C13758FA300263390 /* favicon.ico */,
+				CB53AF0D13758FA300263390 /* files */,
+				CB53AF0F13758FA300263390 /* img */,
+				CB53AF1213758FA300263390 /* index.php */,
+				CB53AF1313758FA300263390 /* js */,
+				CB53AF1F13758FA300263390 /* test.php */,
+			);
+			path = webroot;
+			sourceTree = "<group>";
+		};
+		CB53AF0813758FA300263390 /* css */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AF0913758FA300263390 /* cahier.css */,
+				CB53AF0A13758FA300263390 /* generic.css */,
+			);
+			path = css;
+			sourceTree = "<group>";
+		};
+		CB53AF0D13758FA300263390 /* files */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AF0E13758FA300263390 /* empty */,
+			);
+			path = files;
+			sourceTree = "<group>";
+		};
+		CB53AF0F13758FA300263390 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AF1013758FA300263390 /* cake.icon.png */,
+				CB53AF1113758FA300263390 /* cake.power.gif */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
+		CB53AF1313758FA300263390 /* js */ = {
+			isa = PBXGroup;
+			children = (
+				CB53AF1413758FA300263390 /* addremove.js */,
+				CB53AF1513758FA300263390 /* builder.js */,
+				CB53AF1613758FA300263390 /* controls.js */,
+				CB53AF1713758FA300263390 /* dragdrop.js */,
+				CB53AF1813758FA300263390 /* effects.js */,
+				CB53AF1913758FA300263390 /* jquery.js */,
+				CB53AF1A13758FA300263390 /* prototype.js */,
+				CB53AF1B13758FA300263390 /* scriptaculous.js */,
+				CB53AF1C13758FA300263390 /* slider.js */,
+				CB53AF1D13758FA300263390 /* sound.js */,
+				CB53AF1E13758FA300263390 /* unittest.js */,
+			);
+			path = js;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		CB53AE5113758D5700263390 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = CB53AE5413758D5700263390 /* Build configuration list for PBXProject "cahierenligne" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = CB53AE4F13758D5700263390;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		CB53AE5213758D5700263390 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		CB53AE5313758D5700263390 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB53AE5413758D5700263390 /* Build configuration list for PBXProject "cahierenligne" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB53AE5213758D5700263390 /* Debug */,
+				CB53AE5313758D5700263390 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB53AE5113758D5700263390 /* Project object */;
+}

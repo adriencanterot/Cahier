@@ -23,15 +23,22 @@ class Student extends AppModel {
                     'rule'=> array('is_identical', 'confirm_password'),
                     'message' => "Veuillez reentrer votre mot de passe"
                     ),
-                ),
+			),
             'year' => 'notEmpty',
             'name' => 'notEmpty'
 
             );
+        
+        function beforeSave($options = array()) {
+            parent::beforeSave($options);
+            $this->data['Student']['password'] = Security::hash($this->data['Student']['password'], 'sha256', true);
+            return true;
+        }
 	
 	function validate_login($member, $password) {
 		
-		if($member = $this->find('first', array('conditions' =>array('email' => $member, 'password' => $password)))) {
+		if($member = $this->find('first', array('conditions' =>array('email' => $member, 
+                    'password' => Security::hash($password, 'sha256', true))))) {
 			return $member;
 		} else {
 			return -1;

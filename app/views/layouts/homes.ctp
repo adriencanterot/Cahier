@@ -28,9 +28,9 @@
 		echo $this->Html->meta('icon');
 
 		echo $this->Html->css('generic');
-                echo $this->Html->css('cahier');
-		echo $this->Html->script('addremove.js');
-                echo $html->script('jquery');
+        echo $this->Html->css('cahier');
+		echo $html->script('jquery');
+		echo $this->Html->script('app');
 
 		echo $scripts_for_layout;
 	?>
@@ -56,18 +56,24 @@
                         <h3> Documents </h3>
                         <h4>Par matiere</h4>
                             <? echo $this->element('subjects_documents', array('subjectlist' => $subjectlist)); ?>
+                        
+                        <? if (count($notifications) != 0) {
+                            echo $this->element('notifications', array('notifications' => $notifications));
+                        }?>
                     </div>
 
                     <div id ="right">
-                        <h4>Devoirs à faire</h4>
+                        <h3>Devoirs à faire</h3>
                         <? echo $this->element('eventlist', array('eventlist' => $eventelement)); ?>
+						<br/><hr/><br/>
                         <? echo $this->element('add_event', array('subjects' => $subjects,
                                                                   'documents' => $documents)); ?>
                         
                     </div>
                     
                     <div id ="center">
-                        
+                        <?php echo $this->Session->flash(); ?>
+						
 			<h4>Bonjour <?php echo $session->read('current_user.name'); ?> !</h4>
 			<?php echo $content_for_layout; ?>
 

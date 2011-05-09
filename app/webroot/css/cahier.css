@@ -41,10 +41,71 @@
     padding : 5px 15px 5px 15px;
 }
 #login_form {
-    width:300px;
-    background : #fff;
+    width:800px;
     margin : auto;
-    padding : 40px 30px 40px 30px;
-    margin-top: 30px;
+
 
 }
+#login {
+	background : #fff;
+	width : 300px;
+	height : 350px;
+    float:right;
+    padding : 20px 30px 40px 30px;
+    margin-top: 30px;
+}
+#introduction {
+	background : #fff;
+	width : 300px;
+	height : 350px;
+	float:left;
+	padding : 20px 30px 40px 30px;
+    margin-top: 30px;
+	color:black;
+
+}
+#introduction p {
+	text-align:justify;
+}
+#introduction h4.droite {
+	width:100%;
+	text-align:right;
+}
+#widget1 {
+	float:left;
+	width:45%;
+	height:200px;
+	margin:10px;
+	padding:5px;
+	border:1px solid black;
+
+}
+#widget2 {
+	float:right;
+	width:45%;
+	height:200px;
+	margin:10px;
+	padding:5px;
+	border:1px solid black;
+
+}
+#widget3 {
+	float:left;
+	width:45%;
+	height:200px;
+	margin:10px;
+	padding:5px;
+	border:1px solid black;
+}
+#widget4 {
+	float:right;
+	width:45%;
+	height:200px;
+	margin:10px;
+	padding:5px;
+
+}
+
+
+
+

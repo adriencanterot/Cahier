@@ -24,9 +24,14 @@ class AppController extends Controller {
                 $this->loadModel('Document');
                 $this->loadModel('Event');
                 $this->loadModel('Discussion');
+                $this->loadModel('Notification');
+				$this->loadModel('Notice');
                 
                 //events
                 $this->set('eventelement', $this->Event->find('list'));
+                $this->set('notifications', $this->Notification->find('all', array('condition' => array(
+                    'id' => $this->user()
+                ))));
                 
                 //documents
                 $this->set('mydocs', 
@@ -43,7 +48,7 @@ class AppController extends Controller {
 	}
 
         function user($data = '') {
-            if($data == "") {
+            if($data == '') {
                 return $this->Session->read('current_user.id');
             } else {
                 return $this->Session->read('current_user.'.$data);
@@ -79,6 +84,8 @@ class AppController extends Controller {
         function debug($data) {
             $this->set('debug', $data);
         }
-	
+	function hash($string) {
+		return Security::hash($string, 'sha256', true);
+	}
 }
 ?>

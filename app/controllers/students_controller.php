@@ -47,5 +47,18 @@ class StudentsController extends AppController {
 
             }
         }
+	function editpassword() {
+		if(!empty($this->data)) {
+			$this->Student->id = $this->user();
+			if($this->hash($this->data['Student']['old_password']) == $this->user('password') AND $this->data['Student']['password'] == $this->data['Student']['confirm_password'] AND !empty($this->data['Student']['password'])) {
+				$this->Student->save($this->data,array(), array('password'));
+				$this->notice("Votre mot de passe à été change");
+				$this->redirect('/homes/');
+			} else {
+				$this->notice("Une erreur est survenue");
+			}
+			
+		}
+	}
 }
 ?>

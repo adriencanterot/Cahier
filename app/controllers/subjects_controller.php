@@ -1,5 +1,5 @@
 <?php
 class SubjectsController extends AppController {
-	var $scaffold;
+	var $scaffold = 'admin';
 }
 ?>

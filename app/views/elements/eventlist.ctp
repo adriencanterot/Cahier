@@ -1,3 +1,5 @@
+<ul>
 <? foreach($eventlist as $key => $element): ?>
-    <? echo $html->link($element, '/events/view/'.$key); ?><br>
+    <li><? echo $html->link($element, '/events/view/'.$key); ?></li>
 <?endforeach;?>
+</ul>

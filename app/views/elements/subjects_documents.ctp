@@ -1,3 +1,5 @@
+<ul>
 <? foreach($subjectlist as $id => $subject): ?>
-    <? echo $html->link($subject, '/documents/showbysubject/'.$id); ?><br>
+    <li><? echo $html->link($subject, '/documents/showbysubject/'.$id); ?></li>
 <?endforeach;?>
+</ul>

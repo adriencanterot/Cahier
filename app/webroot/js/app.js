@@ -1,6 +1,7 @@
 $(document).ready(function() {
 	
 	$('.event_form').hide();
+	$('.notice_form').hide();
 	
 })
 

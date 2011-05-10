@@ -1,5 +1,9 @@
 <h3>Annonces</h3>
-Une annonce de membre.
+<? echo $this->element('annonces', array('annonces' => $lastannonces))?>
+<br/>
+<a onclick='showhide(".notice_form")'>Faire passer une annonce à la classe</a>
+<? echo $this->element('notice_form');?>
+	
 <div id = 'home'>
 	<div id = 'widget1'>
 	<h3>Derniers documents</h3>

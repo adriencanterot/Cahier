@@ -1,6 +1,6 @@
 <?php
 class StudentsController extends AppController {
-	var $scaffold;
+	var $scaffold = 'admin';
 	
 	function beforeFilter() {
             $this->allow('login', 'signin');

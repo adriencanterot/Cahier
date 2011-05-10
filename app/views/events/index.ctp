@@ -14,7 +14,7 @@
 		<td><? echo $html->link($e['Student']['name'], '/events/view/'.$e['Student']['id']); ?></td>
 		<td><? echo $e['Subject']['name']?></td>
 		<td>
-			<? echo $html->link('Documents liés', '/documents/showbyevent/'.$e['Event']['id']); ?>
+			<? echo $html->link('Documents liés', '/events/view/'.$e['Event']['id']); ?>
 		</td>
 	</tr>
 	<? endforeach;?>

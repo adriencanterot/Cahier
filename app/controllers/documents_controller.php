@@ -1,6 +1,6 @@
 <?php
 class DocumentsController extends AppController {
-	
+	var $scaffold = 'admin';
 	function index() {
 		$documentlist = $this->Document->find("all");
 		$this->set('documentlist', $documentlist);

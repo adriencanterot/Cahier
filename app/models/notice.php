@@ -2,11 +2,12 @@
 	var $belongsTo = array('Student');
 	
 	var $validate = array(
-		'text' => array('allowEmpty', false)
+		'text' => 'notEmpty'
 	);
 	
 	function beforeSave() {
 		$this->data['Notice']['date'] = date('c');
+		return true;
 	}
 	
 }?>

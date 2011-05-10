@@ -11,11 +11,13 @@
  */
 class EventsController extends AppController {
     //put your code here
-    var $scaffold;
+    var $scaffold = 'admin';
     
     function index() {
         $this->set('eventlist', $this->Event->find('all'));
     }
+
+
     
     function add() {
 		

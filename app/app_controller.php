@@ -2,13 +2,17 @@
 class AppController extends Controller {
 	var $components = array('Session', 'RequestHandler');
         var $helpers = array('Js' => array('Jquery'), 'Session', 'Date');
-        var $discussion_type = '';
 	var $allowance = array();
 	
 	function beforeFilter() {
             
 		$this->restrict();
-                $this->layout = 'homes';
+				if(isset($this->params['admin'])) {
+					$this->layout == 'default';
+				} else {
+					$this->layout = 'homes';
+	                
+				}
                 
                 $this->loadblocks();
 

@@ -6,7 +6,7 @@
 ?>
 
 <? echo $this->Form->create('Discussion', array('url' => '/discussions/add'));
-   echo $form->input('text');
+   echo $form->input('text', array('rows' => 2));
    
    if(isset($event_id)) {
         echo $form->input('event_id', array('type' => 'hidden', 'value' => $event_id));
@@ -15,5 +15,5 @@
         echo $form->input('document_id', array('type' => 'hidden', 'value' => $document_id));
    }
    
-   echo $form->end('Envoyer');
+   echo $form->end('Répondre');
    ?>

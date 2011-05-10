@@ -1,5 +1,8 @@
 <?php
 class DiscussionsController extends AppController {
+	
+	var $scaffold = 'admin';
+
 	function add() {
             if(!empty($this->data)) {
                 $this->data['Discussion']['student_id'] = $this->user();

@@ -12,7 +12,7 @@
  * @copyright     Copyright 2005-2010, Cake Software Foundation, Inc. (http://cakefoundation.org)
  * @link          http://cakephp.org CakePHP(tm) Project
  * @package       cake
- * @subpackage    cake.cake.console.libs.templates.skel.views.layouts
+ * @subpackage    cake.cake.libs.view.templates.layouts
  * @since         CakePHP(tm) v 0.10.0.1076
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
@@ -27,31 +27,20 @@
 	<?php
 		echo $this->Html->meta('icon');
 
-		echo $this->Html->css('generic');
-                echo $this->Html->css('cahier');
-		echo $this->Html->script('addremove.js');
+		echo $this->Html->css('admin');
 
 		echo $scripts_for_layout;
 	?>
-	
-	<script type = "text/javascript">
-	compteur = 1;
-	function addElement(el){ 
-		el.innerHTML += "<input type='file' name='data[Document][file]["+compteur+"]' id='DocumentDocument' /><br/><br/>"
-		compteur++;
-
-	}
-		</script>
 </head>
 <body>
 	<div id="container">
 		<div id="header">
-                        </h1><div id ="menu"><? echo $this->element('topmenu'); ?></div>
+			<h1><?php echo $this->element('topmenu'); ?></h1>
 		</div>
 		<div id="content">
 
 			<?php echo $this->Session->flash(); ?>
-			<div><?php echo $session->read('current_user.name'); ?></div>
+
 			<?php echo $content_for_layout; ?>
 
 		</div>
@@ -59,6 +48,5 @@
 
 		</div>
 	</div>
-	<!--<?php echo $this->element('sql_dump'); ?>-->
 </body>
 </html>

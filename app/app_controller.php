@@ -7,14 +7,15 @@ class AppController extends Controller {
 	function beforeFilter() {
             
 		$this->restrict();
-				if(isset($this->params['admin'])) {
-					$this->layout == 'default';
-				} else {
-					$this->layout = 'homes';
+		
+		if(isset($this->params['admin'])) {
+			$this->layout == 'default';
+		} else {
+			$this->layout = 'homes';
 	                
-				}
+		}
                 
-                $this->loadblocks();
+        $this->loadblocks();
 
 	}
         
@@ -61,8 +62,14 @@ class AppController extends Controller {
 	
 	function restrict() {
 		
-		if($this->Session->read('current_user') OR in_array($this->params['action'], $this->allowance)) {
-			
+		if(isset($this->params['prefix']) AND $this->params['prefix'] == 'admin') {
+			if($this->user('auth_level') >= 1) {
+				return true;
+			} else {
+				$this->redirect('/homes/index');
+				$this->notice("Vous n'êtes pas un administrateur");
+			}
+		} else if($this->Session->read('current_user') OR in_array($this->params['action'], $this->allowance)) {
 			return true;
 			
 		} else {
@@ -89,7 +96,7 @@ class AppController extends Controller {
             $this->set('debug', $data);
         }
 	function hash($string) {
-		return Security::hash($string, 'sha256', true);
+		return Security::hash($string, 'sha1', true);
 	}
 }
 ?>

@@ -1,8 +1,8 @@
 <?
 class Student extends AppModel {
-
+	var $params;
 	var $hasMany = array("Documents", "Events", "Discussions");
-        var $validate = array(
+        /*var $validate = array(
             'email' => array(
                 'email' => array(
                     'rule' => 'email',
@@ -27,18 +27,21 @@ class Student extends AppModel {
             'year' => 'notEmpty',
             'name' => 'notEmpty'
 
-            );
+            );*/
         
         function beforeSave($options = array()) {
             parent::beforeSave($options);
-            $this->data['Student']['password'] = Security::hash($this->data['Student']['password'], 'sha256', true);
+			if($this->params['action'] != 'edit') {
+				$this->data['Student']['password'] = Security::hash($this->data['Student']['password'], 'sha1', true);
+	            
+			}
             return true;
         }
 	
 	function validate_login($member, $password) {
 		
 		if($member = $this->find('first', array('conditions' =>array('email' => $member, 
-                    'password' => Security::hash($password, 'sha256', true))))) {
+                    'password' => Security::hash($password, 'sha1', true))))) {
 			return $member;
 		} else {
 			return -1;

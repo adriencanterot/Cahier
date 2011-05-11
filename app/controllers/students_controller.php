@@ -4,6 +4,7 @@ class StudentsController extends AppController {
 	
 	function beforeFilter() {
             $this->allow('login', 'signin');
+			$this->Student->params = $this->params;
             parent::beforeFilter();
 	}
 	

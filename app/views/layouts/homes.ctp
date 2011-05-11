@@ -47,7 +47,7 @@
 <body>
 	<div id="container">
 		<div id="header">
-                        </h1><div id ="menu"><? echo $this->element('topmenu'); ?></div>
+                        </h1><div id ="menu"><? echo $this->element('topmenu', array('auth_level' => $session->read('auth_level'))); ?></div>
 		</div>
 		<div id="content">
 

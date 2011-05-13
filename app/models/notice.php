@@ -6,7 +6,9 @@
 	);
 	
 	function beforeSave() {
-		$this->data['Notice']['date'] = date('c');
+		if($this->params['action'] != 'edit') {
+			$this->data['Notice']['issue_date'] = $this->now();
+		}
 		return true;
 	}
 	

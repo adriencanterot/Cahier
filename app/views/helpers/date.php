@@ -27,9 +27,17 @@ return $this->dayofweek($date).' '.date('j', strtotime($date)).' '.$this->listof
                 return 'Après demain';
                 break;
             case 3:
+			return $this->dayofweek($date);
+			break;
             case 4:
+			return $this->dayofweek($date);
+			break;
             case 5:
+			return $this->dayofweek($date);
+			break;
             case 6:
+            return $this->dayofweek($date);
+			break;
             case 7 :
                 return $this->dayofweek($date);
             default:

@@ -30,6 +30,7 @@
 		echo $this->Html->css('generic');
         echo $this->Html->css('cahier');
 		echo $html->script('jquery');
+		echo $html->script('jquery-ui');
 		echo $this->Html->script('app');
 
 		echo $scripts_for_layout;
@@ -74,7 +75,6 @@
                     <div id ="center">
                         <?php echo $this->Session->flash(); ?>
 						
-			<h4>Bonjour <?php echo $session->read('current_user.name'); ?> !</h4>
 			<?php echo $content_for_layout; ?>
 
 
@@ -89,6 +89,6 @@
                       
 		</div>
 	</div>
-	<?php echo $this->element('sql_dump'); ?>-->
+	<?php echo $this->element('sql_dump'); ?>
 </body>
 </html>

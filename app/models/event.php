@@ -9,6 +9,12 @@ class Event extends AppModel {
     var $belongsTo = array("Subject", "Student");
     var $hasMany = array('Discussions');
     
+	function beforeSave() {
+		if($this->params['action'] != 'edit') {
+			$this->data['Event']['issue_date'] = $this->now();
+		}
+		return true;
+	}
 }
 
 ?>

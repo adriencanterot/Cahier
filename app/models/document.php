@@ -5,6 +5,13 @@ class Document extends AppModel {
         var $hasAndBelongsToMany = "Event";
 	var $hasMany = array("DocumentElement", "Discussion");
 	
+	function beforeSave() {
+		if($this->params['action'] != 'edit') {
+			$this->data['Document']['issue_date'] = $this->now();
+		}
+		return true;
+	}
+	
 	function aftersave() {
 		if(!empty($this->data['Document']['file'])) {
 			$i = 0;

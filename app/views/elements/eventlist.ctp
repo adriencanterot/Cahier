@@ -1,5 +1,13 @@
-<ul>
+<div class = 'accordion'>
 <? foreach($eventlist as $key => $element): ?>
-    <li><? echo $html->link($element, '/events/view/'.$key); ?></li>
+    <h4><a href="#"><? echo $element['Event']['name']; ?></a></h4>
+	<div><ul>
+		<li> Pour <? echo $this->Date->formatteddate($element['Event']['due_date'])?></li>
+		<li>En <? echo $element['Subject']['name']?></li>
+		<li><? echo $html->link('Voir les documents', '/events/view/'.$element['Event']['id'])?></li>
+		<br/>
+		
+			
+		</div>
 <?endforeach;?>
-</ul>
+</div>

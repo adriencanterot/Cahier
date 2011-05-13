@@ -1,3 +1,4 @@
+<h3>Liste des devoirs</h3>
 <table>
 	<tr>
 		<th>Informations</th>

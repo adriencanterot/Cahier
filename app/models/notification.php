@@ -6,6 +6,7 @@ class Notification extends AppModel {
             $this->set('student_id', $student);
             $this->set('route', $action);
             $this->set('text', $description);
+			$this->set('issue_date', $this->now());
             $this->save();
         }
     }

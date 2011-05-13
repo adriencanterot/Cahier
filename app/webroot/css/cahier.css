@@ -116,7 +116,22 @@
 strong {
 	color : #A32500;
 }
-
+.preview {
+	width : 100px;
+	height : 120px;
+	margin : 30px;
+	float:left;
+}
+.preview:hover {
+	margin-top:25px;
+}
+#previews {
+	width : 100%;
+	margin-bottom : 200px;
+}
+.accordion {
+	margin-left : 20px;
+}
 
 
 

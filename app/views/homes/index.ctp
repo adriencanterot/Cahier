@@ -7,10 +7,11 @@
 <div id = 'home'>
 	<div id = 'widget1'>
 	<h3>Derniers documents</h3>
+	<? echo $this->element('documents', array('documentlist' => $lastdocuments))?>
 	</div>
 	<div id = 'widget2'>
 	<h3>Devoirs a faire</h3>
-	<? echo $this->element('eventlist', array('eventlist' => $eventelement)); ?>
+	<div class = 'content'><? echo $this->element('eventlist', array('eventlist' => $eventelement)); ?></div>
     
 	</div>
 	<div id = 'widget3'>

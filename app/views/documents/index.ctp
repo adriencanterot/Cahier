@@ -1,9 +1,11 @@
+<h3>Liste des documents</h3>
 <table>
 	<tr>
-		<th>Name</th>
-		<th>Student</th>
+		<th>Titre</th>
+		<th>Étudiant</th>
+		<th>Date de publication</th>
 		<th>Type</th>
-		<th>Subject</th>
+		<th>Matière</th>
 		<th>Voir</th>
 		
 	</tr>
@@ -11,6 +13,7 @@
 	<tr>
 		<td><? echo $e['Document']['name']?></td>
 		<td><? echo $e['Student']['name']?></td>
+		<td><? echo $date->formatteddate($e['Document']['issue_date']);?>
 		<td><? echo $e['Document']['type']?></td>
 		<td><? echo $e['Subject']['name']?></td>
 		<td>

@@ -2,7 +2,7 @@
 class DocumentsController extends AppController {
 	var $scaffold = 'admin';
 	function index() {
-		$documentlist = $this->Document->find("all");
+		$documentlist = $this->Document->find("all", array('order' => 'issue_date desc'));
 		$this->set('documentlist', $documentlist);
 	}
 	
@@ -24,14 +24,14 @@ class DocumentsController extends AppController {
 		$this->set('doclist', $doclist);
                 $this->set('id', $id);
 	}
-        
-        function showbysubject($id) {
-            
-            $this->set('documentlist', $this->Document->find('all', array(
-                'conditions' => array('subject_id' => $id)
-            )));
-            $this->render('index');
-        }
+	
+	function showbysubject($id) {
+
+	            $this->set('documentlist', $this->Document->find('all', array(
+	                'conditions' => array('subject_id' => $id)
+	            )));
+	            $this->render('index');
+	        }
         
 
 }

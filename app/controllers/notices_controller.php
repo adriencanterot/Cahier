@@ -1,5 +1,5 @@
 <? class NoticesController extends AppController {
-	
+	var $scaffold = 'admin';
 	function add() {
 		if(!empty($this->data)) {
 			$this->data['Notice']['student_id'] = $this->user();

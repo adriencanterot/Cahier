@@ -32,7 +32,9 @@ class Student extends AppModel {
         function beforeSave($options = array()) {
             parent::beforeSave($options);
 			if($this->params['action'] != 'edit') {
-				$this->data['Student']['password'] = Security::hash($this->data['Student']['password'], 'sha1', true);
+				$this->data['Student']['password'] = $this->hash($this->data['Student']['password']);
+				$this->data['Student']['signup_date'] = $this->now();
+				
 	            
 			}
             return true;
@@ -41,7 +43,7 @@ class Student extends AppModel {
 	function validate_login($member, $password) {
 		
 		if($member = $this->find('first', array('conditions' =>array('email' => $member, 
-                    'password' => Security::hash($password, 'sha1', true))))) {
+                    'password' => $this->hash($password))))) {
 			return $member;
 		} else {
 			return -1;

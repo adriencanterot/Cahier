@@ -2,6 +2,8 @@ $(document).ready(function() {
 	
 	$('.event_form').hide();
 	$('.notice_form').hide();
+	$('.accordion').accordion();
+	$('.datepicker').datepicker();
 	
 })
 

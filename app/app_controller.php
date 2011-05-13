@@ -1,7 +1,7 @@
 <?
 class AppController extends Controller {
 	var $components = array('Session', 'RequestHandler');
-        var $helpers = array('Js' => array('Jquery'), 'Session', 'Date');
+        var $helpers = array('Js' => array('Jquery'), 'Session', 'Date', 'Viewer');
 	var $allowance = array();
 	
 	function beforeFilter() {
@@ -33,7 +33,9 @@ class AppController extends Controller {
 				$this->loadModel('Notice');
                 
                 //events
-                $this->set('eventelement', $this->Event->find('list'));
+                $this->set('eventelement', $this->Event->find('all', array('order' => 'due_date', 'conditions' => array(
+                	'due_date >=' => $this->now()
+                ))));
                 $this->set('notifications', $this->Notification->find('all', array('condition' => array(
                     'id' => $this->user()
                 ))));
@@ -75,7 +77,7 @@ class AppController extends Controller {
 		} else {
 			
 			$this->redirect('/students/login');
-			$this->Session->setFlash('YOU ARE NOT ALLOWED TO GET THERE');
+			$this->Session->setFlash('Vous netes pas connecte');
 		}
 	}
 	
@@ -97,6 +99,9 @@ class AppController extends Controller {
         }
 	function hash($string) {
 		return Security::hash($string, 'sha1', true);
+	}
+	function now() {
+		return date('Y-m-d H:i:s');
 	}
 }
 ?>

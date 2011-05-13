@@ -14,7 +14,7 @@ class EventsController extends AppController {
     var $scaffold = 'admin';
     
     function index() {
-        $this->set('eventlist', $this->Event->find('all'));
+        $this->set('eventlist', $this->Event->find('all', array('order' => 'due_date', 'conditions' => array('due_date >=' => $this->now()))));
     }
 
 

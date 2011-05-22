@@ -10,5 +10,15 @@ class Notification extends AppModel {
             $this->save();
         }
     }
+
+	function viewed($url, $id) {
+		
+		$idlist = $this->find('list', array('conditions' => array('route' => $url, 'student_id' => $id)));
+		if(!empty($idlist)) {
+			foreach($idlist as $element) {
+				$this->delete($element);
+			}
+		}
+	}
 }
 ?>

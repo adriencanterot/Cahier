@@ -11,7 +11,7 @@
 	<? foreach($eventlist as $e): ?>
 	<tr>
 		<td><? echo $e['Event']['name']?></td>
-		<td><? echo $date->when($e['Event']['due_date']);?></td>
+		<td><? echo $date->when($e['Event']['due_date'])?></td>
 		<td><? echo $html->link($e['Student']['name'], '/events/view/'.$e['Student']['id']); ?></td>
 		<td><? echo $e['Subject']['name']?></td>
 		<td>

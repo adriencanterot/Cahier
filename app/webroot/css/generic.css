@@ -387,7 +387,7 @@ div.actions ul li a:hover {
 
 input[type=submit],
 div.actions ul li a,
-td.actions a {
+td.actions a, a.button {
 	font-weight:normal;
 	padding: 4px 8px;
 	background:#e6e49f;

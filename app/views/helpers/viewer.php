@@ -18,4 +18,6 @@
 		$ext = explode('.', $path);
 		return end($ext);
 	}
+	
+
 }?>

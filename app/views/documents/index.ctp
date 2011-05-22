@@ -1,4 +1,9 @@
-<h3>Liste des documents</h3>
+<? echo $html->link('Ajouter un document', '/documents/add', array('class' => 'button'));?><br/>
+<br/>
+<h3>Liste des derniers documents</h3>
+
+<p>Pour voir un classement par matière, vous pouvez cliquer sur les noms de matières dans le menu de gauche.</p>
+<br/>
 <table>
 	<tr>
 		<th>Titre</th>

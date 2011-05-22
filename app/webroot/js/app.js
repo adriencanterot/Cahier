@@ -4,7 +4,10 @@ $(document).ready(function() {
 	$('.notice_form').hide();
 	$('.accordion').accordion();
 	$('.datepicker').datepicker();
-	
+	$('.richtext').wysiwyg({
+		rmUnusedControls : true,
+		initialContent : ''
+	});
 })
 
 function add(text, into) {

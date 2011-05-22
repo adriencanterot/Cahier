@@ -7,7 +7,6 @@ class AppController extends Controller {
 	function beforeFilter() {
             
 		$this->restrict();
-		
 		if(isset($this->params['admin'])) {
 			$this->layout == 'default';
 		} else {
@@ -36,9 +35,13 @@ class AppController extends Controller {
                 $this->set('eventelement', $this->Event->find('all', array('order' => 'due_date', 'conditions' => array(
                 	'due_date >=' => $this->now()
                 ))));
-                $this->set('notifications', $this->Notification->find('all', array('condition' => array(
-                    'id' => $this->user()
+				$this->Notification->viewed('/'.$this->params['url']['url'], $this->user());
+
+                $this->set('notifications', $this->Notification->find('all', array('conditions' => array(
+                    'student_id' => $this->user()
                 ))));
+
+
                 
                 //documents
                 $this->set('mydocs', 
@@ -101,7 +104,14 @@ class AppController extends Controller {
 		return Security::hash($string, 'sha1', true);
 	}
 	function now() {
-		return date('Y-m-d H:i:s');
+		return date('Y-m-d');
+	}
+	
+	function sanitize($data) {
+		if(isset($data) AND !empty($data)) {
+			App::import('Sanitize');
+			return Sanitize::clean($data, array('encore' => true, 'remove_html' => true));
+		}
 	}
 }
 ?>

@@ -22,15 +22,18 @@
 <head>
 	<?php echo $this->Html->charset(); ?>
 	<title>
-		<?php echo $title_for_layout; ?>
+		<?php echo 'Cahier en Ligne' ?>
 	</title>
 	<?php
 		echo $this->Html->meta('icon');
 
 		echo $this->Html->css('generic');
         echo $this->Html->css('cahier');
+		echo $this->Html->css('wysiwyg');
+		echo $this->Html->css('smoothness');
 		echo $html->script('jquery');
 		echo $html->script('jquery-ui');
+		echo $html->script('wysiwyg');
 		echo $this->Html->script('app');
 
 		echo $scripts_for_layout;
@@ -54,13 +57,14 @@
 
                     
                     <div id ="left">
-                        <h3> Documents </h3>
-                        <h4>Par matiere</h4>
+                        <h2> Documents </h2>
+						<? echo $html->link('Ajouter un document', '/documents/add', array('class' => 'button'));?><br/>
+						<br/>
+                        <h4>Par Matière</h4>
                             <? echo $this->element('subjects_documents', array('subjectlist' => $subjectlist)); ?>
-                        
-                        <? if (count($notifications) != 0) {
-                            echo $this->element('notifications', array('notifications' => $notifications));
-                        }?>
+                        	<br/>
+                            <? echo $this->element('notifications', array('notifications' => $notifications)); ?>
+
                     </div>
 
                     <div id ="right">

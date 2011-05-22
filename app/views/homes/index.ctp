@@ -7,7 +7,9 @@
 <div id = 'home'>
 	<div id = 'widget1'>
 	<h3>Derniers documents</h3>
-	<? echo $this->element('documents', array('documentlist' => $lastdocuments))?>
+	<? echo $this->element('documents', array('documentlist' => $lastdocuments))?><br/>
+	<? echo $html->link('Ajouter un document', '/documents/add', array('class' => 'button'));?><br/>
+	<br/>
 	</div>
 	<div id = 'widget2'>
 	<h3>Devoirs a faire</h3>
@@ -15,12 +17,9 @@
     
 	</div>
 	<div id = 'widget3'>
-	<h3>Notifications</h3>
-	<? if (count($notifications) != 0) {
-        echo $this->element('notifications', array('notifications' => $notifications));
-    } else {
-	echo "Vous n'avez aucune notification";
-}?>
+
+       <? echo $this->element('notifications', array('notifications' => $notifications)); ?>
+
 		
 	</div>
 	<div id = 'widget4'>

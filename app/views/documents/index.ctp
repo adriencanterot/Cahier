@@ -22,7 +22,7 @@
 		<td><? echo $e['Document']['type']?></td>
 		<td><? echo $e['Subject']['name']?></td>
 		<td>
-			<? echo $html->link('Voir les fichiers', '/documents/show/'.$e['Document']['id']); ?>
+			<? echo $html->link('Voir les fichiers', '/documents/view/'.$e['Document']['id']); ?>
 		</td>
 	</tr>
 	<? endforeach;?>

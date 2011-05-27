@@ -1,9 +1,11 @@
 <h3> Discussion </h3>
+<table>
 <?php
     foreach($discussion as $message) {
-        echo '<h4>'.$message['Student']['name'].'</h4> '.$message['Discussion']['text'].'<br/ >';
+        echo '<tr><td><h4>'.$message['Student']['name'].'</h4></td> <td>'.$message['Discussion']['text'].'</td></tr>';
     }
 ?>
+</table>
 
 <? echo $this->Form->create('Discussion', array('url' => '/discussions/add'));
    echo $form->input('text', array('rows' => 2));

@@ -44,7 +44,8 @@ class EventsController extends AppController {
     }
 
 	private function format($date) {
-		list($month, $day, $year) = explode('/', $date);
+		list($month, $day
+			, $year) = explode('/', $date);
 		return mktime(date('H'), date('i'), date('s'),$month, $day, $year);
 	}
 }

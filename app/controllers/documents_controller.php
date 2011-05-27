@@ -18,7 +18,7 @@ class DocumentsController extends AppController {
 		$this->set("subjects", $this->Document->Subject->find('list'));
 	}
 	
-	function show($id) {
+	function view($id) {
                 $doclist =  $this->Document->DocumentElement->find("all", array("conditions" => array('document_id' => $id)));
 				$this->set('body', $this->Document->find('first', array('conditions' => array('Document.id' => $id))));
                 $this->set('discussion', $this->Discussion->find('all', array('conditions' => array('document_id' => $id))));

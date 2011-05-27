@@ -17,6 +17,9 @@ class StudentsController extends AppController {
 			if($member != -1) {
 				$this->Session->setFlash('Vous êtes connecté');
 				$this->create_session($member);
+				if($this->user('auth_level') == -1) {
+					$this->redirect('/students/editpassword');
+				}
 				$this->redirect('/homes');
 
 			} else {
@@ -32,26 +35,12 @@ class StudentsController extends AppController {
                 $this->redirect("/students/login");
 	}
 
-        function signin() {
-            $this->layout = 'login';
-            if(!empty($this->data)) {
-                if($this->Student->save($this->data)) {
-                    
-			$member = $this->Student->validate_login($this->data['Student']['email'], $this->data['Student']['password']);
-			if($member != -1) {
-				$this->Session->setFlash('INPUT DOES MATCH');
-				$this->create_session($member);
-				$this->redirect('/homes');
 
-                         }
-                }
-
-            }
-        }
 	function editpassword() {
 		if(!empty($this->data)) {
 			$this->Student->id = $this->user();
 			if($this->hash($this->data['Student']['old_password']) == $this->user('password') AND $this->data['Student']['password'] == $this->data['Student']['confirm_password'] AND !empty($this->data['Student']['password'])) {
+				$this->data['Student']['auth_level'] = 1;
 				$this->Student->save($this->data,array(), array('password'));
 				$this->notice("Votre mot de passe à été change");
 				$this->redirect('/homes/');

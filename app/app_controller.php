@@ -68,7 +68,7 @@ class AppController extends Controller {
 	function restrict() {
 		
 		if(isset($this->params['prefix']) AND $this->params['prefix'] == 'admin') {
-			if($this->user('auth_level') >= 1) {
+			if($this->user('auth_level') >= 5) {
 				return true;
 			} else {
 				$this->redirect('/homes/index');

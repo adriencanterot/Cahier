@@ -1,3 +1,7 @@
+<h2>Cahier en ligne</h2>
+<p> Bienvenue sur le cahier en ligne, le cahier de la classe de première du lycée condorcet.</p>
+<br/>
+
 <h3>Annonces</h3>
 <? echo $this->element('annonces', array('annonces' => $lastannonces))?>
 <br/>
@@ -12,9 +16,13 @@
 	<br/>
 	</div>
 	<div id = 'widget2'>
-	<h3>Devoirs a faire</h3>
-	<div class = 'content'><? echo $this->element('eventlist', array('eventlist' => $eventelement)); ?></div>
-    
+	<h3>Dernières discussions</h3>
+	<div class = 'content'></div>
+    	<? foreach($lastdiscussions as $e) {
+			echo $html->link($e['Student']['name'].' sur '.$e['Document']['name'].''.$e['Event']['name'].' en '.$e['Document']['Subject']['name'].''.$e['Event']['Subject']['name'].'',
+			'/'.((!empty($e['Document']['name']) ? 'documents' : 'events').'/view/'.(!empty($e['Document']['id']) ? $e['Document']['id'] : $e['Event']['id'])));
+			echo '<br/>';
+}?>
 	</div>
 	<div id = 'widget3'>
 

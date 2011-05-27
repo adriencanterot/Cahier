@@ -1,5 +1,7 @@
+<table>
 <?php
     foreach($annonces as $message) {
-        echo '<strong>'.$message['Student']['name'].'</strong> '.$message['Notice']['text'].'<br/ >';
+        echo '<tr><td style="min-width:200px"><strong>'.$message['Student']['name'].'</strong></td><td> '.$message['Notice']['text'].'</td></tr>';
     }
 ?>
+</table>

@@ -22,7 +22,7 @@
 <head>
 	<?php echo $this->Html->charset(); ?>
 	<title>
-		<?php echo $title_for_layout; ?>
+		Cahier en Ligne - Bienvenue
 	</title>
 	<?php
 		echo $this->Html->meta('icon');

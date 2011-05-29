@@ -17,16 +17,19 @@
 	</div>
 	<div id = 'widget2'>
 	<h3>Dernières discussions</h3>
-	<div class = 'content'></div>
+	<div class = 'content'>
+		<ul>
     	<? foreach($lastdiscussions as $e) {
-			echo $html->link($e['Student']['name'].' sur '.$e['Document']['name'].''.$e['Event']['name'].' en '.$e['Document']['Subject']['name'].''.$e['Event']['Subject']['name'].'',
+			echo '<li>';
+			echo $html->link($e['Student']['name'].' sur '.h($e['Document']['name']).''.h($e['Event']['name']).' en '.$e['Document']['Subject']['name'].''.$e['Event']['Subject']['name'].'',
 			'/'.((!empty($e['Document']['name']) ? 'documents' : 'events').'/view/'.(!empty($e['Document']['id']) ? $e['Document']['id'] : $e['Event']['id'])));
-			echo '<br/>';
+			echo '</li>';
 }?>
+</ul>
 	</div>
 	<div id = 'widget3'>
 
-       <? echo $this->element('notifications', array('notifications' => $notifications)); ?>
+       <? //echo $this->element('notifications', array('notifications' => $notifications)); ?>
 
 		
 	</div>

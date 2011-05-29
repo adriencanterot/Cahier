@@ -1,8 +1,9 @@
+<br /><br />
 <h3> Discussion </h3>
 <table>
 <?php
     foreach($discussion as $message) {
-        echo '<tr><td><h4>'.$message['Student']['name'].'</h4></td> <td>'.$message['Discussion']['text'].'</td></tr>';
+        echo '<tr><td><h4>'.$message['Student']['name'].'</h4></td> <td>'.nl2br(h($message['Discussion']['text'])).'</td></tr>';
     }
 ?>
 </table>

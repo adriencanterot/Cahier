@@ -1,5 +1,7 @@
 <div class = 'documentlist'>
+	<ul>
 <? foreach($documentlist as $element): ?>
-	<h4><? echo $html->link($element['Document']['name'], '/documents/show/'.$element['Document']['id'])?> - <? echo $element['Subject']['name']?></h4>
+	<li><h4><? echo $html->link(h($element['Document']['name']), '/documents/view/'.$element['Document']['id'])?> - <? echo $element['Subject']['name']?></h4></li>
 <?endforeach;?>
+</ul>
 </div>

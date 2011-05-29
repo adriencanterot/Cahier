@@ -1,6 +1,6 @@
 <div class = 'accordion'>
 <? foreach($eventlist as $key => $element): ?>
-    <h4><a href="#"><? echo $element['Event']['name']; ?></a></h4>
+    <h4><a href="#"><? echo h($element['Event']['name']); ?></a></h4>
 	<div><ul>
 		<li> Pour <? echo $this->Date->when($element['Event']['due_date'])?></li>
 		<li>En <? echo $element['Subject']['name']?></li>

@@ -108,10 +108,7 @@ class AppController extends Controller {
 	}
 	
 	function sanitize($data) {
-		if(isset($data) AND !empty($data)) {
-			App::import('Sanitize');
-			return Sanitize::clean($data, array('encore' => true, 'remove_html' => true));
-		}
+		return $data;
 	}
 }
 ?>

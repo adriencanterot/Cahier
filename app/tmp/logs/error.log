@@ -351,3 +351,4 @@
 2011-05-22 14:02:24 Warning: Warning (2): Missing argument 1 for DocumentsController::show() in [/Users/adriencanterot/Sites/cahierenligne/app/controllers/documents_controller.php, line 21]
 2011-05-27 19:36:03 Warning: Warning (512): <span style="color:Red;text-align:left"><b>SQL Error:</b> 1052: Column 'issue_date' in order clause is ambiguous</span> in [/Users/adriencanterot/Sites/cahierenligne/cake/libs/model/datasources/dbo_source.php, line 684]
 2011-05-27 19:36:03 Warning: Warning (2): Invalid argument supplied for foreach() in [/Users/adriencanterot/Sites/cahierenligne/app/views/homes/index.ctp, line 17]
+2011-05-28 10:55:28 Warning: Warning (2): Invalid argument supplied for foreach() in [/Users/adriencanterot/Sites/cahierenligne/app/models/document.php, line 44]

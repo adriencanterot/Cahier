@@ -16,7 +16,7 @@
 	</tr>
 	<? foreach($related as $e): ?>
 	<tr>
-		<td><? echo $e['Document']['name']?></td>
+		<td><? echo h($e['Document']['name'])?></td>
 		<td><? echo $e['Student']['name']?></td>
 		<td><? echo $e['Document']['type']?></td>
 		<td><? echo $e['Subject']['name']?></td>

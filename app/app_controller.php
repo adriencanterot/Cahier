@@ -5,7 +5,7 @@ class AppController extends Controller {
 	var $allowance = array();
 	
 	function beforeFilter() {
-            
+        
 		$this->restrict();
 		if(isset($this->params['admin'])) {
 			$this->layout == 'default';
@@ -75,6 +75,10 @@ class AppController extends Controller {
 				$this->notice("Vous n'êtes pas un administrateur");
 			}
 		} else if($this->Session->read('current_user') OR in_array($this->params['action'], $this->allowance)) {
+			if(!in_array($this->params['action'], $this->allowance) AND $this->user('auth_level') == -1 AND !in_array($this->params['action'], array('editpassword', 'logout'))) {
+				$this->notice('Vous devez impérativement changer votre mot de passe');
+				$this->redirect('/students/editpassword');
+			}
 			return true;
 			
 		} else {

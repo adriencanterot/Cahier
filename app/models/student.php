@@ -1,7 +1,7 @@
 <?
 class Student extends AppModel {
 	var $params;
-	var $hasMany = array("Documents", "Events", "Discussions");
+	var $hasMany = array("Documents", "Events", "Discussions", "Visits");
         /*var $validate = array(
             'email' => array(
                 'email' => array(

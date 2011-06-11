@@ -16,6 +16,7 @@ class DocumentsController extends AppController {
 		}
 	
 		$this->set("subjects", $this->Document->Subject->find('list'));
+        $this->set('events', $this->Event->find('list', array('order' => 'due_date', 'conditions' => array('due_date >=' => $this->now()))));	
 	}
 	
 	function view($id) {

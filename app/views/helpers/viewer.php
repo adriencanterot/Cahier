@@ -5,7 +5,7 @@
 		$i = 0;
 		foreach($pagelist as $block) {
 			$i++;
-			if(!in_array($this->type($block['DocumentElement']['path']), array('mp3', 'png', 'jpg'))) {
+			if(!in_array($this->type($block['DocumentElement']['path']), array('mp3'))) {
 			echo "<div class = 'preview'>";
 
 				echo $this->Html->image('icons/'.$this->type($block['DocumentElement']['path']).'.png', 
@@ -24,7 +24,7 @@
 			if(in_array($this->type($block['DocumentElement']['path']), array('png', 'jpg'))) {
 				echo "<div>";
 
-				echo $this->Html->image('/'.$block['DocumentElement']['path']);
+				echo $this->Html->image('/'.$block['DocumentElement']['path'], array('url' => '/'.$block['DocumentElement']['path'], 'width' => 650));
 			
 				echo "</div><br/><hr/><br/>";
 			}
@@ -50,7 +50,7 @@
 	
 	function extradocs($pagelist) {
 		foreach($pagelist as $block) {
-			if(!in_array($this->type($block['DocumentElement']['path']), array('mp3', 'png', 'jpg'))) {
+			if(!in_array($this->type($block['DocumentElement']['path']), array('mp3'))) {
 				return true;
 			}
 		}

@@ -2,6 +2,7 @@
 <?
 	echo $this->Form->create("Document", array("enctype" => 'multipart/form-data'));
 	echo $this->Form->input("subject_id", array('label' => 'Matière'));
+	echo $this->Form->input('Event.Event');
 	echo $this->Form->input("name", array('label' => 'Titre de votre document'));
 
 	

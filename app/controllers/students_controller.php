@@ -30,7 +30,7 @@ class StudentsController extends AppController {
 	function logout() {
                 $this->layout = 'login';
 		$this->Session->destroy();
-                $this->Session->setFlash("Vous etes deconnectes");
+                $this->Session->setFlash("Vous êtes déconnecté.");
                 $this->redirect("/students/login");
 	}
 

@@ -1,7 +1,7 @@
 <h2>Document : <? echo $body['Document']['name']?></h2>
 <? if($viewer->extradocs($doclist)) {?>
 	<div id = 'previews'>
-		<h3>Documents supplémentaires</h3>
+		<h3>Listes des documents</h3>
 	<? $viewer->listpages($doclist);?>
 </div>
 <? }?>

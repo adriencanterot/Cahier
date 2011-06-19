@@ -15,7 +15,7 @@
 			<? echo $e['name'] ?>
 		</td>
 		<td><? echo $e['NoV'];?></td>
-		<td><? echo $date->when($e['LastVisit'])?></td>
+		<td><? echo $date->whattime($e['LastVisit'])?></td>
 		<td><? echo $e['NoDo']?></td>
 		<td><? echo $e['NoDi']?></td>
 		<td><? echo $e['NoE']?></td>

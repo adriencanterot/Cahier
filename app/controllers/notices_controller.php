@@ -11,4 +11,7 @@
 			
 		}
 	}
+	function index() {
+		$this->set('noticelist', $this->Notice->find('all', array('order' => 'issue_date desc')));
+	}
 }?>

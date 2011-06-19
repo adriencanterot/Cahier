@@ -11,7 +11,7 @@
 <div id = 'introduction'>
 	<h3>Cahier en ligne</h3>
 	<h4>Bienvenue</h4>
-	<p>Bienvenue sur le Cahier en ligne de la classe de première S du lycée Condorcet.
+	<p>Bienvenue sur le Cahier en ligne de la classe de première du lycée Condorcet.
 	Ce service vous propose de consulter les cours et les devoirs de la classe. Il vous est possible de les commenter pour demander de l'aide ou signaler une erreur.</p><br/>
 	
 	<h4>Comment se connecter</h4>

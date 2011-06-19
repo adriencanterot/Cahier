@@ -14,6 +14,7 @@ return $this->dayofweek($date).' '.date('j', strtotime($date)).' '.$this->listof
     }
     
     function when($date) {
+		date_default_timezone_set('Australia/Sydney');
         $nbday = date('z', strtotime($date)) - date('z', time());
         
         switch($nbday) {
@@ -26,6 +27,15 @@ return $this->dayofweek($date).' '.date('j', strtotime($date)).' '.$this->listof
             case 2 :
                 return 'Après demain';
                 break;
+			case -1 :
+				return 'Hier';
+				break;
+			case -2 : 
+				return 'Avant-hier';
+				break;
+			case -3 :
+				return 'Il y a 3 jours';
+				break;
             case 3:
 			return $this->dayofweek($date);
 			break;
@@ -46,4 +56,8 @@ return $this->dayofweek($date).' '.date('j', strtotime($date)).' '.$this->listof
         
         }
     }
+	function whattime($date) {
+		return $this->when($date).' à '.(date('G', strtotime($date))). ' h '.date('i', strtotime($date));
+
+	}
 }

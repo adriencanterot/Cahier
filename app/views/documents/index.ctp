@@ -21,7 +21,7 @@
 		</td>
 		<td><? echo h($e['Document']['name'])?></td>
 		<td><? echo h($e['Student']['name'])?></td>
-		<td><? echo $date->formatteddate($e['Document']['issue_date']);?>
+		<td><? echo $date->whattime($e['Document']['issue_date']);?>
 		<td><? echo $e['Subject']['name']?></td>
 
 	</tr>

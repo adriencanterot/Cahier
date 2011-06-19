@@ -2,10 +2,10 @@
 <p> Bienvenue sur le cahier en ligne, le cahier de la classe de première du lycée condorcet.</p>
 <br/>
 
-<h3>Annonces</h3>
+<h3>Annonces</h3><? echo $html->link(' Voir toutes les annonces', '/notices/index');?>
 <? echo $this->element('annonces', array('annonces' => $lastannonces))?>
 <br/>
-<a onclick='showhide(".notice_form")'>Faire passer une annonce à la classe</a>
+<a onclick='showhide(".notice_form")'>Faire passer une annonce à la classe</a> | <? echo $html->link(' Voir toutes les annonces', '/notices/index');?>
 <? echo $this->element('notice_form');?>
 	
 <div id = 'home'>

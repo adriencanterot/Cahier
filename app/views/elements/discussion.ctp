@@ -3,7 +3,7 @@
 <table>
 <?php
     foreach($discussion as $message) {
-        echo '<tr><td><h4>'.$message['Student']['name'].'</h4></td> <td>'.nl2br(h($message['Discussion']['text'])).'</td></tr>';
+        echo '<tr><td><h4>'.$message['Student']['name'].'</h4><br/>'.$date->whattime($message['Discussion']['issue_date']).'</td> <td>'.nl2br(h($message['Discussion']['text'])).'</td></tr>';
     }
 ?>
 </table>
